@@ -1,0 +1,98 @@
+body
+{
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Morn';
+    src: url('../../../public/Fonts/Morn.ttf');
+}
+.Numbering
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Numbering h1 {
+    display: inline;
+    font-family: 'Morn';
+    color: white;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    filter: drop-shadow(3.2px 3.2px 3.2px rgba(0, 0, 0, 0.6));
+    padding: 0.5rem 1.7rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #F5BC25; /* Default background color */
+    border: 3px solid #F5BC25; /* Default border color */
+}
+
+.Numbering h1:nth-child(1) {
+    background-color: #F5BC25; 
+    border: none; 
+    color: black;
+    padding: 0.5rem 2rem;
+}
+
+.Numbering h1:not(:first-child) {
+    background-color: transparent; 
+}
+.Numbering .Line1
+{
+    width: 30rem;
+    height: 0.1875rem;
+    background: #FFF;
+    margin: 0;
+}
+.Numbering .Line2
+{
+    width: 30rem;
+    height: 0.1875rem;
+    background: #FFF;
+}
+.Titles
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+}
+.Titles h1
+{
+    display: inline;
+    color: white;
+    color: #FFF;
+    font-family: 'Morn';
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 14rem;
+}
+.Titles h1:last-child
+{
+    margin: 0;
+}
+
+@media screen and (max-width:760px) 
+{
+    .Numbering h1
+    {
+        font-size: 1.5rem;
+        padding: 0.2rem 1rem;
+    }
+    .Numbering h1:nth-child(1)
+    {
+        padding: 0.2rem 1.1rem;
+    }
+    .Titles
+    {
+        margin-top: -20px;
+    }
+    .Titles h1
+    {
+        font-size: 0.9rem;
+        margin-right: 6.2rem;
+    }
+}

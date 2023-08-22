@@ -1,0 +1,184 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'Amar';
+    src: url('../../../public/Fonts/Amaranth.ttf');
+}
+@font-face {
+    font-family: 'Morn';
+    src: url('../../../public/Fonts/Morn.ttf');
+}
+.MMYY
+{
+    text-align: center;
+    color: white;
+    font-family: 'Amar';
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+.FDates
+{
+    width: 70rem;
+    height: 6.5rem;
+    border: 3px solid #FFF;
+    padding-left: 5.25rem;
+    padding-right: 5.25rem;
+}
+
+.DatesS
+{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.DayDate
+{
+    text-align: center;
+    display: inline-block;
+    width: 12rem;
+    height: 6.5rem;
+    margin-top: 0rem;
+    margin-left: 10px;
+    position: relative;
+    color: #A4A4A4;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.DayDate .Day
+{
+    position: absolute; 
+    top: 10%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-family: 'Morn';
+    color: #A4A4A4;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 900;
+}
+.DayDate .Date
+{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: #F5BC25;
+    font-family: 'Morn';
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 900;
+    transition: all 0.3s ease-in-out;
+}
+.DayDate:hover 
+{
+    background-color: #F5BC25;
+    color: black;
+}
+.DayDate:hover .Day
+{
+    color: black;
+}
+.DayDate:hover .Date
+{
+    color: black;
+}
+.SDayDate
+{
+    text-align: center;
+    display: inline-block;
+    background-color: #F5BC25;
+    width: 12rem;
+    height: 6.5rem;
+    margin-top: 0rem;
+    margin-left: 10px;
+    position: relative;
+}
+.SDayDate .Day
+{
+    position: absolute; 
+    top: 10%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-family: 'Morn';
+    color: black;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 900;
+}
+.SDayDate .Date
+{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: 'Morn';
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 900;
+}
+.Header {
+    position: absolute; 
+    top: 60%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+  }
+  
+  .SelDate {
+    display: flex;
+    align-items: center; 
+    color: white;
+    font-family: 'Inter';
+    font-size: 1.4rem;
+  }
+  
+  .Calendar {
+    width: 2rem; 
+    height: 3rem; 
+    margin-right: 10px; 
+  }
+  .DispTimeSlots
+  {
+    position: absolute; 
+    top: 65%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    width:  75rem;
+    align-items: center; 
+    justify-content: center;
+  }
+  .DispTimeSlots > * {
+    margin: 1rem 1rem; /* Adjust the margin as needed */
+  }
+  .ProButton {
+    position: absolute;
+    top: 88%;
+    left: 50%; /* Position it horizontally at 50% from the left */
+    transform: translateX(-50%); /* Center it horizontally using transform */
+    text-align: center;
+    width: 10rem;
+    height: 4rem;
+    border:3px solid #F5BC25;
+    border-radius: 2.5rem;;
+  }
+  .ProButton h1 {
+    font-family: 'Inter';
+    color: white;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
