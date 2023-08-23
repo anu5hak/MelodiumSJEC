@@ -1,9 +1,3 @@
-body
-{
-    width: 100%;
-    height: 100%;
-}
-
 @font-face {
     font-family: 'Morn';
     src: url('../../../public/Fonts/Morn.ttf');
@@ -25,7 +19,7 @@ body
     padding: 0.5rem 1.7rem;
     text-align: center;
     border-radius: 50%;
-    background-color: #F5BC25; /* Default background color */
+    background-color: transparent; /* Default background color */
     border: 3px solid #F5BC25; /* Default border color */
 }
 
@@ -35,9 +29,10 @@ body
     color: black;
     padding: 0.5rem 2rem;
 }
-
-.Numbering h1:not(:first-child) {
-    background-color: transparent; 
+.Numbering .StageText
+{
+    background-color: #F5BC25; 
+    color: black;
 }
 .Numbering .Line1
 {
@@ -73,26 +68,4 @@ body
 .Titles h1:last-child
 {
     margin: 0;
-}
-
-@media screen and (max-width:760px) 
-{
-    .Numbering h1
-    {
-        font-size: 1.5rem;
-        padding: 0.2rem 1rem;
-    }
-    .Numbering h1:nth-child(1)
-    {
-        padding: 0.2rem 1.1rem;
-    }
-    .Titles
-    {
-        margin-top: -20px;
-    }
-    .Titles h1
-    {
-        font-size: 0.9rem;
-        margin-right: 6.2rem;
-    }
 }

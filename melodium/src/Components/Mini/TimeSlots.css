@@ -13,6 +13,7 @@
     font-style: normal;
     font-weight: 700;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 .Slot:hover
