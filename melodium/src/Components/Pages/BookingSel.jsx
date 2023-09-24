@@ -6,17 +6,19 @@ import GridDots from '../../SVG/Grid.svg'
 import Star from '../../SVG/Star.svg'
 import { Icon } from '@iconify/react';
 import MelodiumLogo from '../../Images/MelodiumLogo.png'
-import { Link,useNavigate} from 'react-router-dom'; 
+// import { Link,useNavigate} from 'react-router-dom'; 
 
 function BookingSel() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const navigateToTimeSlots = (Room) =>
   {
-    navigate("/BookingTimeSlots",{state: {Type:Room}})
+    // navigate("/BookingTimeSlots",{state: {Type:Room}})
   }
   return (
     <>
-      <div className="BookingImagesContainer">
+    <div className="BookingSelContainer">
+
+    <div className="BookingImagesContainer">
         <img id="BookingControlR" src={ControlRoomImageBook} alt="Control Room Booking" />
         <img id="BookingMic" src={MicImageBook} alt="Booking Mic" />
       </div>
@@ -47,6 +49,7 @@ function BookingSel() {
       <div className="LogoContainer">
         <img id='StudioLogo' src={MelodiumLogo} alt="" />
       </div>
+    </div>
     </>
   );
 }

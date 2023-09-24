@@ -23,15 +23,6 @@
   overflow: hidden; 
 }
 
-@font-face {
-  font-family: "mont";
-  src: url("../../../public/Fonts/Montserrat.ttf");
-}
-
-@font-face {
-  font-family: "staat";
-  src: url("../../../public/Fonts/Staatliches.ttf");
-}
 
 /* Background image with animation */
 .background-image {

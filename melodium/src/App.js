@@ -1,8 +1,6 @@
 import './App.css';
 import React,{useState} from 'react';
 import { BrowserRouter as Router, Route, Routes,Navigate } from 'react-router-dom'
-import './Components/Pages/BookingDet'
-import BookingDet from './Components/Pages/BookingDet';
 import BookingSel from './Components/Pages/BookingSel';
 import BookingOne from './Components/Pages/BookingOne';
 import BookingTwo from './Components/Pages/BookingTwo';
@@ -99,6 +97,7 @@ function App() {
           <PageFour />
           <Pagefive />
           <Pagesix />
+          <BookingSel/>
           <Gallery /> 
           <PageReview />
           <Contact />
