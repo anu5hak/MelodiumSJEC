@@ -1,0 +1,351 @@
+
+@font-face {
+  font-family: "mont";
+  src: url("../../../public/Fonts/Montserrat.ttf");
+}
+
+@font-face {
+  font-family: "staat";
+  src: url("../../../public/Fonts/Staatliches.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homecontainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  /* top: 20rem; */
+  overflow: hidden; 
+}
+
+@font-face {
+  font-family: "mont";
+  src: url("../../../public/Fonts/Montserrat.ttf");
+}
+
+@font-face {
+  font-family: "staat";
+  src: url("../../../public/Fonts/Staatliches.ttf");
+}
+
+/* Background image with animation */
+.background-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url("./Images/homeimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 40%;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  transform: translateX(100%);
+  animation: slideInBackground 1.5s forwards;
+}
+
+@keyframes slideInBackground {
+  to {
+      transform: translateX(0);
+  }
+}
+
+/* Left side yellow rectangle */
+.rectangle1 {
+  position: absolute;
+  width: 11.2rem;
+  height: 4rem;
+  top: 10rem;
+  left: 0; /* Adjust left position */
+  background-color: #F5BC25;
+  transform: translateX(-100%);
+  animation: slideInLeft 1s forwards;
+}
+
+/* Grey rectangle */
+.rectangle {
+  position: absolute; /* Change to absolute */
+  width: 770px;
+  height: 92px;
+  top: 26rem;
+  left: 0; /* Adjust left position */
+  background-color: #2F2F2F;
+  transform: translateX(-100%);
+  animation: slideInLeft 1.2s forwards;
+}
+
+@keyframes slideInLeft {
+  to {
+      transform: translateX(0);
+  }
+}
+
+/* Right side yellow rectangle */
+.rectangle2 {
+  position: absolute;
+  width: 3.7rem;
+  height: 15rem;
+  top: 19rem;
+  right: 0; /* Adjust right position */
+  background-color: #F5BC25;
+  transform: translateX(100%);
+  animation: slideInRight 1s forwards;
+}
+
+@keyframes slideInRight {
+  to {
+      transform: translateX(0);
+  }
+}
+
+/* Text */
+.herotext {
+  width: 37.2rem;
+  height: fit-content;
+  top: 20.5rem;
+  color: #ffffff;
+  left: 10rem;
+  font-family: mont;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 90px;
+  position: absolute; /* Change to absolute */
+  opacity: 0;
+  transform: scale(0.5) translateY(100%);
+  animation: fadeInAndScale 1s ease-in-out forwards, slideInFromBottom 1s ease-in-out 1s forwards;
+}
+
+@keyframes fadeInAndScale {
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes slideInFromBottom {
+  to {
+      transform: translateY(0);
+  }
+}
+
+/* Text span */
+.herotext span {
+  color: #F5BC25;
+}
+
+/* Sjec Studio */
+.sjecstudio {
+  position: absolute;
+  right: 1rem; /* Adjust right position */
+  top: 45rem;
+}
+
+.sjecstudio h1 {
+  color: #D9D9D9;
+  font-family: mont;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 3.6px;
+  transform: translateX(100%);
+  animation: slideInRight 1s forwards;
+}
+
+.buttoncontainer {
+  top:42rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; 
+  left: 43vw;
+  border-radius: 2.2rem;
+  transform: scale(0.3) translateY(100%);
+  animation: fadeInAndScale 1s ease-in-out forwards, slideInFromBottom 1s ease-in-out 1s forwards;
+}
+@keyframes fadeInAndScale {
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes slideInFromBottom {
+  to {
+      transform: translateY(0);
+  }
+}
+button {
+  padding: 8px 26px;
+  background: #F5BC25;
+  font-size: 2.2rem;
+  font-family: staat;
+  font-weight: 500;
+  color: #181818;
+  border: 3px solid #F5BC25;
+  border-radius: 2.2rem;
+  letter-spacing: 0.2rem;
+  box-shadow: 0 0 0 #fec1958c;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+button:hover {
+  background: transparent;
+  color: #F5BC25;
+  box-shadow: 0 0 25px #fec1958c;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .rectangle1 {
+      width: 8.2rem;
+      height: 3rem;
+      top: 8rem;
+  }
+  .rectangle {
+      width: 31rem;
+      height: 3.5rem;
+      top: 22rem;
+  }
+  .herotext {
+      top: 17.7rem;
+      font-size: 25px;
+      width: 27.2rem;
+      height: fit-content;
+      left: 4rem;
+      line-height: 4rem;   
+  }
+  .rectangle2{
+    width:2.5rem;
+    height: 10rem;
+  }
+  .sjecstudio{
+    top:40.5rem;
+  }
+  .sjecstudio h1 {
+    font-size: 12px;
+  }
+  .buttoncontainer {
+    top:38rem;
+    left: 43vw;
+  }
+  button {
+    padding: 4px 24px;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+      .rectangle1 {
+        width: 6rem;
+        height: 2rem;
+        top: 8rem;
+    }
+    .rectangle {
+        width: 25rem;
+        height: 3.5rem;
+        top: 22rem;
+    }
+    .herotext {
+        top: 18.5rem;
+        font-size: 19px;
+        width: 21.2rem;
+        height: fit-content;
+        left: 4rem;
+        line-height: 3.5rem;   
+    }
+    .rectangle2{
+      width:1.5rem;
+      height: 8rem;
+    }
+    .sjecstudio{
+      top:40.5rem;
+    }
+    .sjecstudio h1 {
+      font-size: 11px;
+      letter-spacing: 0.13rem;
+    }
+    .buttoncontainer {
+      top:38rem;
+      left: 43vw;
+    }
+    button {
+      padding: 3px 20px;
+      font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+  .rectangle1 {
+    width: 5rem;
+    height: 2rem;
+    top: 8rem;
+  }
+  .rectangle {
+      width: 28rem;
+      height: 3.5rem;
+      top: 22rem;
+  }
+  .herotext {
+      top: 18.5rem;
+      font-size: 20px;
+      width: 24.2rem;
+      height: fit-content;
+      left: 6rem;
+      line-height: 3.5rem;   
+  }
+  .rectangle2{
+    width:2rem;
+    height: 8rem;
+    top:20rem;
+  }
+  .sjecstudio{
+  display: none;
+  }
+  .buttoncontainer {
+    top:37rem;
+    left: 43vw;
+  }
+  button {
+    padding: 3px 20px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and  (max-width: 480px) {
+  .rectangle1 {
+    width: 3rem;
+    height: 2rem;
+    top: 8rem;
+  }
+  .rectangle {
+      width: 18.5rem;
+      height: 2.5rem;
+      top: 22rem;
+  }
+  .herotext {
+      top: 19.5rem;
+      font-size: 15px;
+      width: 16.2rem;
+      height: fit-content;
+      left: 2rem;
+      line-height: 2.5rem;   
+  }
+  .rectangle2{
+    display: none;
+  }
+  .sjecstudio{
+    display: none;
+  }
+  .buttoncontainer {
+    top:37rem;
+    left:33vw;
+  }
+  button {
+    padding: 3px 20px;
+    font-size: 1.3rem;
+  }
+}

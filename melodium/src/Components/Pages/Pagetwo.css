@@ -1,0 +1,689 @@
+.pagetwocontainer{
+    position: relative;
+    width: 100vw;
+    height: 220vh;
+}
+@font-face {
+    font-family:morn;
+    src: url(../../../public/Fonts/Morn.ttf);
+}
+@font-face {
+    font-family:maven;
+    src: url(../../../public/Fonts/MavenPro.ttf);
+}
+@font-face {
+    font-family: Moulpali;
+    src: url(../../../public/Fonts/Moulpali.ttf);
+}
+@font-face {
+    font-family: "mont";
+    src: url("../../../public/Fonts/Montserrat.ttf");
+  }
+
+.rectangle3 {
+    position: relative;
+    width: 17rem;
+    height: 7rem;
+    top:6.5rem;
+    background-color: #F5BC25;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.rectangle3.animate {
+    opacity: 1;
+    animation: slideInLeft 1s forwards;
+}
+@keyframes slideInLeft {
+  to {
+      transform: translateX(0);
+  }
+}
+ 
+
+  
+.circle2 {
+    position: relative;
+    top: -24rem;
+    left:91rem;
+    fill: rgba(245, 188, 37, 0.50);
+    backdrop-filter: blur(5px);
+    z-index:3;
+}
+.herotext2{
+    width:35rem;
+    height:fit-content;
+    color: #F8F8F8;
+    font-family: morn;
+    font-size: 4rem;
+    position: relative;
+    font-style: normal;
+    top:9rem;
+    left: 8rem;
+    font-weight: 400;
+    line-height: 80px; /* 123.077% */
+    letter-spacing: -2.6px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.herotext2.animate {
+    opacity: 0;
+    transform: scale(0.5) translateY(100%);
+    animation: fadeInAndScale 1s ease-in-out forwards, slideInFromBottom 1s ease-in-out 1s forwards;
+  }
+    
+    @keyframes fadeInAndScale {
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    @keyframes slideInFromBottom {
+        to {
+            transform: translateY(0);
+        }
+    }
+.herotext2 span{
+    color: #F5BC25;
+}
+.subtext2 {
+    color: #FFF;
+    font-family: maven;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    width: 33rem;
+    height: fit-content;
+    text-align: left;
+    top: 14rem;
+    left: 8rem;
+    position: relative;
+}
+.pagetwoimagecontainer{
+    position: relative;
+    width:35rem;
+    height:28rem;
+    top: -31rem;
+    left: 58.5rem;
+}
+
+.pagetwoimg{
+    position:relative;
+    top:-1.3rem;
+    width:35rem;
+    height:28rem;
+    object-fit: cover;
+    border-radius: 32px;
+    transition: opacity 1s ease-in-out;
+}
+.pagetwoimg:hover{
+    transform: scale(1.1);
+}
+.pagetwoimg.animate {
+    transform: translateX(130%); 
+    animation: slideInFromRight 0.8s ease-in-out 0.4s forwards;
+}
+
+@keyframes slideInFromRight {
+    to {
+        transform: translateX(0); 
+    }
+}
+
+.rectangle32 {
+    position: relative;
+    width: 0.2rem;
+    height:7rem;
+    top: -32rem;
+    background-color: #ffffff;
+    left: 3.2rem;
+}
+
+.rectangle33 {
+    position: relative;
+    width: 7rem;
+    height: 0.2rem;
+    top: -33rem;
+    background-color: #ffffff;
+    left: 5.4rem;
+}
+.circle23{
+    fill: #F5BC25;
+    backdrop-filter: blur(5px);
+    position: relative;
+    top: -31.5rem;
+    left: 2.6rem;
+}
+.record1 {
+    position: relative;
+    width: 11rem;
+    height: 0.2rem;
+    top:-38.8rem;
+    background-color:#F5BC25;
+    left: 59.6rem;
+}
+.record2 {
+    position: relative;
+    width: 0.3rem;
+    height: 11rem;
+    top:-49.8rem;
+    background-color:#F5BC25;
+    left: 59.6rem;
+}
+.mikeimagecontainer{
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    top: -54rem;
+    left: 79rem;
+}
+.mike2 {
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+}
+.mike2:hover{
+    transform: scale(1.1);
+}
+
+.rect4 {
+    position: relative;
+    left: 91rem;
+    width: 16rem;
+    height: 5rem;
+    top: -58.7rem;
+    background-color: #F5BC25;
+    transition: opacity 1s ease-in-out;
+}
+.rect4.animate {
+    opacity: 1;
+    transform: translateX(100%); /* Start from the right side */
+    animation: slideInFromRight 0.6s ease-in-out 0.4s forwards;
+}
+
+@keyframes slideInFromRight {
+    to {
+        transform: translateX(0); /* Move to the original position */
+    }
+}
+
+
+.circlethree {
+    position: relative;
+    width: 12.5rem;
+    top: -69rem;
+    left: 4rem;
+    fill: rgba(245, 188, 37, 0.50);
+    backdrop-filter: blur(5px);
+    z-index:2;
+}
+.pagetwo2imagecontainer{
+    position: relative;
+    width:35rem;
+    height:28rem;
+    top: -76rem;
+    left: 6.7rem;
+}
+.pagethreeimg{
+    position: relative;
+    width:35rem;
+    height:28rem;
+    top:-1rem;
+    object-fit: cover;
+    border-radius: 32px;  
+    transition: opacity 3s ease-in-out;
+}
+.pagethreeimg.animate {
+    opacity: 1;
+    transform: translateX(-100%);
+    animation: slideInLeft 1s forwards;
+  }
+  @keyframes slideInLeft {
+    to {
+        transform: translateX(0);
+    }
+}
+.pagethreeimg:hover{
+    transform: scale(1.1);
+}
+.herotext3{
+    position: relative;
+    width:35rem;
+    height:fit-content;
+    color: #F8F8F8;
+    font-family: morn;
+    font-size: 4rem;
+    font-style: normal;
+    text-align: right;
+    top:-95rem;
+    left: 52rem;
+    font-weight: 400;
+    line-height: 80px; /* 123.077% */
+    letter-spacing: -2.6px;
+    opacity: 0;
+    transform: scale(0.5) translateY(100%);
+    animation: fadeInAndScale 1s ease-in-out forwards, slideInFromBottom 1s ease-in-out 1s forwards;
+ }
+   
+   @keyframes fadeInAndScale {
+       to {
+           opacity: 1;
+           transform: scale(1);
+       }
+   }
+   
+   @keyframes slideInFromBottom {
+       to {
+           transform: translateY(0);
+       }
+   }
+.herotext3 span{
+    color: #F5BC25;
+}
+
+.subtext3 {
+    color: #FFF;
+    font-family: maven;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    width: 33rem;
+    height: fit-content;
+    text-align: left;
+    top:-90rem;
+    left: 58rem;
+    position: relative;
+}
+
+.rectangle42 {
+    position: relative;
+    width: 8rem;
+    height: 0.2rem;
+    top: -86rem;
+    background-color: #ffffff;
+    left: 92rem;
+}
+.circle33{
+    fill: #F5BC25;
+    backdrop-filter: blur(5px);
+    position: relative;
+    top: -88rem;
+    left: 100.8rem;
+}
+
+.rectangle41 {
+    position: relative;
+    width: 0.2rem;
+    height:7rem;
+    top: -98.5rem;
+    background-color: #ffffff;
+    left: 102rem;
+}
+
+.miketext {
+    color: #FFF;
+    font-family: Moulpali;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px; /* 320% */
+   letter-spacing: -1px;
+    width: 31rem;
+    height: fit-content;
+    text-align: left;
+    top: -138.5rem;
+    left: 74rem;
+    position: relative;
+}
+
+.miketext span{
+    color: #F5BC25;
+}
+
+.lewitt{
+    position: relative;
+    width: 4rem;
+    height: 0.2rem;
+    top:-141rem;
+    background-color:#F5BC25;
+    left:86rem;
+}
+
+.control {
+    color: #FFF;
+    font-family: Moulpali;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px; /* 320% */
+    letter-spacing: -1px;
+    width: 31rem;
+    height: fit-content;
+    text-align: left;
+    top: -112.7rem;
+    left: 31.3rem;
+    position: relative;
+}
+.control span{
+    color: #F5BC25;
+}
+.control1 {
+    position: relative;
+    width: 4rem;
+    height: 0.2rem;
+    top:-115.2rem;
+    background-color:#F5BC25;
+    left:40rem;
+} 
+.melodiumcontainer{
+    position:relative ;
+    top:-108rem;
+    left:2rem;
+    width:9rem;
+    height : 1.5rem;
+}
+.melodium{
+    text-align: center;
+    font-weight: 700;
+    line-height: normal;
+    color: #D9D9D9;
+    font-family: mont;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+    transform: translateX(-100%);
+    animation: slideInLeft 1s forwards;
+  }
+  @keyframes slideInLeft {
+    to {
+        transform: translateX(0);
+    }
+}
+.melodium span{
+    color: #F5BC25;
+}
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    /* .pagetwocontainer{
+        width: 100vw;
+        height: 210vh;
+    } */
+    .rectangle3 {
+        width: 11rem;
+        height: 4rem;
+        top:0rem;
+    }
+    /* .circle2 {
+        color: rgb(0, 0, 0);
+        top: -24rem;
+        left:31rem;
+        width:12.5rem;
+        border-radius: 6.2rem;
+        background-color: aqua;
+    } */
+     .herotext2{
+        width:30rem;
+        height:fit-content;
+        font-size: 3rem;
+        top:4rem;
+        left: 6rem;
+        line-height: 70px; 
+        letter-spacing: -2.6px;
+    }
+    .subtext2 {
+        font-size: 22px;
+        width: 26rem;
+        height: fit-content;
+        top: 10rem;
+        left: 6rem;
+    }
+    .pagetwoimagecontainer{
+        width:26rem;
+        height:23rem;
+        top: -29rem;
+        left: 42.5rem;
+    }
+    
+     .pagetwoimg{
+        top:-1.3rem;
+        width:26rem;
+        height:23rem;
+        left:0rem;
+        margin-left: 0;
+    }
+    .rectangle32 {
+        width: 0.2rem;
+        height:7rem;
+        top: -32rem;
+        left: 3.2rem;
+    }
+    
+    .rectangle33 {
+        width: 7rem;
+        height: 0.2rem;
+        top: -33rem;
+        left: 5.4rem;
+    }
+    .circle23{
+        top: -31.5rem;
+        left: 2.6rem;
+    }
+    .record1 {
+        top:-37.8rem;
+        left: 40.6rem;
+    }
+    .record2 {
+        top:-48.8rem;
+        left: 40.6rem;
+    }
+
+ 
+    .mikeimagecontainer{
+        width: 21rem;
+        height: 23rem;
+        top: -52rem;
+        left: 52rem;
+    }
+    .mike2 {
+        width: 22rem;
+        height: 20rem;
+    } 
+     .rect4 {
+        left: 60rem;
+        width: 12rem;
+        height: 4rem;
+    }
+    
+    
+    /*.circlethree { 
+        width: 12.5rem;
+        top: -69rem;
+        left: 4rem;
+        fill: rgba(245, 188, 37, 0.50);
+        backdrop-filter: blur(5px);
+        z-index:2;
+    }*/
+
+    
+    .pagetwo2imagecontainer{
+        background-color: #F5BC25;
+        width:26rem;
+        height:23rem;
+        left: 10rem;
+        border-radius: 1.9rem;
+    }
+    .pagethreeimg{
+        width:26rem;
+        height:23rem;
+        top:0rem;
+        margin: 0;
+       
+    }
+    /* .herotext3{
+        position: relative;
+        width:35rem;
+        height:fit-content;
+        color: #F8F8F8;
+        font-family: morn;
+        font-size: 4rem;
+        font-style: normal;
+        text-align: right;
+        top:-95rem;
+        left: 52rem;
+        font-weight: 400;
+        line-height: 80px; 
+        letter-spacing: -2.6px;
+        opacity: 0;
+        transform: scale(0.5) translateY(100%);
+        animation: fadeInAndScale 1s ease-in-out forwards, slideInFromBottom 1s ease-in-out 1s forwards;
+     }
+       
+       @keyframes fadeInAndScale {
+           to {
+               opacity: 1;
+               transform: scale(1);
+           }
+       }
+       
+       @keyframes slideInFromBottom {
+           to {
+               transform: translateY(0);
+           }
+       }
+    .herotext3 span{
+        color: #F5BC25;
+    }
+    
+    .subtext3 {
+        color: #FFF;
+        font-family: maven;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 31rem;
+        height: fit-content;
+        text-align: left;
+        top:-90rem;
+        left: 58.5rem;
+        position: relative;
+    }
+    
+    .rectangle42 {
+        position: relative;
+        width: 8rem;
+        height: 0.2rem;
+        top: -86rem;
+        background-color: #ffffff;
+        left: 92rem;
+    }
+    .circle33{
+        fill: #F5BC25;
+        backdrop-filter: blur(5px);
+        position: relative;
+        top: -88rem;
+        left: 100.8rem;
+    }
+    
+    .rectangle41 {
+        position: relative;
+        width: 0.2rem;
+        height:7rem;
+        top: -98.5rem;
+        background-color: #ffffff;
+        left: 102rem;
+    }
+    
+    .miketext {
+        color: #FFF;
+        font-family: Moulpali;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 80px; 
+       letter-spacing: -1px;
+        width: 31rem;
+        height: fit-content;
+        text-align: left;
+        top: -138.5rem;
+        left: 74rem;
+        position: relative;
+    }
+    
+    .miketext span{
+        color: #F5BC25;
+    }
+    
+    .lewitt{
+        position: relative;
+        width: 4rem;
+        height: 0.2rem;
+        top:-141rem;
+        background-color:#F5BC25;
+        left:86rem;
+    }
+    
+    .control {
+        color: #FFF;
+        font-family: Moulpali;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 80px; 
+        letter-spacing: -1px;
+        width: 31rem;
+        height: fit-content;
+        text-align: left;
+        top: -107.7rem;
+        left: 31.3rem;
+        position: relative;
+    }
+    .control span{
+        color: #F5BC25;
+    }
+    .control1 {
+        position: relative;
+        width: 4rem;
+        height: 0.2rem;
+        top:-110.2rem;
+        background-color:#F5BC25;
+        left:40rem;
+    } 
+    .melodiumcontainer{
+        position:relative ;
+        top:-108rem;
+        left:2rem;
+        width:9rem;
+        height : 1.5rem;
+    }
+    .melodium{
+        text-align: center;
+        font-weight: 700;
+        line-height: normal;
+        color: #D9D9D9;
+        font-family: mont;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 3.6px;
+        transform: translateX(-100%);
+        animation: slideInLeft 1s forwards;
+      }
+      @keyframes slideInLeft {
+        to {
+            transform: translateX(0);
+        }
+    }
+    .melodium span{
+        color: #F5BC25;
+    }
+    
+}
+  */
+}

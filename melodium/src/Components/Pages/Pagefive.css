@@ -1,0 +1,698 @@
+.pagefivecontainer{
+  position:relative;
+  width: 100vw;
+  height:100vh;
+  margin: 0;
+  padding: 0;
+}
+*{
+  margin:0;
+  padding:0;
+}
+@font-face {
+  font-family: mont;
+  src: url("../../../public/Fonts/Montserrat.ttf");
+}
+@font-face {
+  font-family:baloo;
+  src: url(../../../public/Fonts/Balooda.ttf);
+}
+@font-face {
+  font-family:morn;
+  src: url(../../../public/Fonts/Morn.ttf);
+}
+@font-face {
+  font-family:maven;
+  src: url(../../../public/Fonts/MavenPro.ttf);
+}
+@font-face {
+  font-family: Moulpali;
+  src: url(../../../public/Fonts/Moulpali.ttf);
+}
+.facilitycircle{
+  position:relative;
+  border-radius: 495px;
+  border: 4px solid #F5BC25;
+  backdrop-filter: blur(5px);
+  width: 390px;
+  height: 495px;
+  transform: rotate(-90deg);
+  flex-shrink: 0;
+  top:-18rem;
+  left:-18rem;
+}
+.facilityherotext{
+  position: relative;
+  height:4rem;
+  top:-29rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.3) translateY(-100%);
+  transition: opacity 1s ease-in-out;
+  }
+  .facilityherotext.animate { 
+    animation: fadeInAndScale 1s ease-in-out forwards, slideInFromTop 1s ease-in-out 1s forwards;
+  }
+    
+    @keyframes fadeInAndScale {
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    
+    @keyframes slideInFromTop {
+        to {
+            transform: translateY(0);
+        }
+    }
+.facilityherotext h1{
+  position: absolute;
+  color: #FFF;
+  font-family: staat;
+  font-size:3.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transform: scale(1.3) translateY(-100%);
+  animation: fadeInAndScale 1s ease-in-out forwards, slideInFromTop 1s ease-in-out 1s forwards;
+}
+  
+  @keyframes fadeInAndScale {
+      to {
+          opacity: 1;
+          transform: scale(1);
+      }
+  }
+  
+  @keyframes slideInFromTop {
+      to {
+          transform: translateY(0);
+      }
+  }
+.facilitysubcontainer{
+  position:relative;
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width:100vw;
+  top:-26.5rem;
+}
+.facilitysub{
+  width:48rem;
+  position:absolute;
+  height:4rem;
+}
+.facilitysubtext {
+  color: #868686;
+  position: relative;
+  font-family: morn;
+  font-size: 1.35rem;
+  font-style: normal;
+  line-height: normal;
+  }
+.all5images{
+  position:relative;
+  top:-22rem;
+  width: 100vw;
+  height:31rem;
+  display: flex;
+  justify-content: center;
+}
+.all5images img{
+  margin:0rem;
+}
+.fac1container {
+  width: 22rem;
+  height: 31.5rem;
+  position: absolute;
+  top: 0rem;
+  left: 13rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  object-fit: contain;
+  border-radius: 2rem;
+  color: transparent;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.fac1 {
+  position: absolute;
+  width: 22rem;
+  height: 31.5rem;
+  border-radius: 2rem;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-in-out;
+  }
+  .fac1.animate { 
+    animation: slideInLeft 2.8s forwards;
+  }
+  @keyframes slideInLeft {
+    to {
+        transform: translateX(0);
+    }
+  }
+
+.fac1container:hover {
+  transform: scale(1.1);
+  z-index: 4;
+  box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.70);
+  color:#F5BC25;
+}
+
+.fac1container:hover h1 {
+  background-color: #252323;
+}
+
+
+.fac1container  h1{
+  border-radius: 1.5rem;
+  top: 28.5rem;
+  width:13rem;
+  height:2.3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-family: morn;
+  position: absolute;
+}
+.fac1container .fac1subtext
+{
+  display: none;
+}
+.fac1container .fac1subtext.displayed
+{
+  background-color: #252323;
+  border-radius: 1.2rem;
+  font-family: morn;
+  width:50rem;
+  height: 18rem;
+  display: flex;
+  margin: 2.5rem;
+  padding: 1.5rem;
+  margin-top: 6rem;
+  color: white;
+  z-index: 3;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.fac2container{
+  width:22rem;
+  height:31rem;
+  position:absolute;
+  top:0rem;
+  left: 26rem;
+  object-fit: contain;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-radius: 2rem;
+  z-index: 3;
+  color: transparent;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+} 
+.fac2{
+  position: absolute;
+  width: 22rem;
+  height: 31.5rem;
+  border-radius: 2rem;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-in-out;
+  }
+  .fac2.animate { 
+    animation: slideInLeft 2.4s forwards;
+  }
+  @keyframes slideInLeft {
+    to {
+        transform: translateX(0);
+    }
+  }
+.fac2container:hover {
+  transform: scale(1.1);
+  z-index: 6;
+  box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.70);
+  color:#F5BC25;
+}
+
+.fac2container:hover h1 {
+  background-color: #252323;
+}
+
+.fac2container h1 {
+  border-radius: 1.5rem;
+  top: 28.5rem;
+  width:13rem;
+  height:2.3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-family: morn;
+  position: absolute;
+  display: flex;
+}
+.fac2container .fac2subtext
+{
+  display: none;
+}
+.fac2container .fac2subtext.displayed2
+{
+  background-color: #252323;
+  border-radius: 1.2rem;
+  font-family: morn;
+  width:50rem;
+  height: 22rem;
+  display: flex;
+  margin: 2.5rem;
+  padding: 2rem;
+  margin-top: 3rem;
+  color: white;
+  z-index: 3;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.fac3container{
+  width:22rem;
+  height:31rem;
+  position:absolute;
+  top:0rem;
+  left: 41rem;
+  z-index:5;
+  object-fit: contain;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-radius: 2rem;
+  color: transparent;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+} 
+.fac3{
+  position:absolute;
+  width:22rem;
+  height:31.5rem;
+  border-radius: 2rem;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-in-out;
+  }
+.fac3.animate { 
+  animation: slideInLeft 1.9s forwards;
+}
+@keyframes slideInLeft {
+  to {
+      transform: translateX(0);
+  }
+}
+.fac3container:hover {
+  transform: scale(1.1);
+  z-index: 8;
+  box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.70);
+  color:#F5BC25;
+}
+.fac3container:hover h1 {
+  background-color: #252323;
+}
+.fac3container h1 {
+  border-radius: 1.5rem;
+  top: 28.5rem;
+  width:15rem;
+  height:2.3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 6;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-family: morn;
+  position: absolute;
+  display: flex;
+}
+.fac3container .fac3subtext
+{
+  display: none;
+}
+
+.fac3container .fac3subtext.displayed3
+{
+  background-color: #252323;
+  border-radius: 1.2rem;
+  font-family: morn;
+  width:50rem;
+  height: 22rem;
+  display: flex;
+  margin: 2rem;
+  padding: 1rem;
+  margin-top: 2.5rem;
+  color: white;
+  z-index: 3;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.fac4container{
+  width:22rem;
+  height:31rem;
+  position:absolute;
+  top:0rem;
+  left: 56rem;
+  object-fit: contain;
+  display: flex;
+  z-index: 7;
+  text-align: center;
+  justify-content: center;
+  border-radius: 2rem;
+  color: transparent;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+} 
+.fac4{
+  position:absolute;
+  width:22rem;
+  height:31.5rem;
+  border-radius: 2rem;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-in-out;
+  }
+.fac4.animate { 
+  animation: slideInLeft 1.2s forwards;
+}
+@keyframes slideInLeft {
+  to {
+      transform: translateX(0);
+  }
+}
+.fac4container:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.70);
+  color:#F5BC25;
+}
+.fac4container:hover h1 {
+  background-color: #252323;
+}
+.fac4container h1 {
+  border-radius: 1.5rem;
+  top: 28.5rem;
+  width:15rem;
+  height:2.3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 7;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-family: morn;
+  position: absolute;
+  display: flex;
+} 
+.fac4container .fac4subtext
+{
+  display: none;
+}
+
+.fac4container .fac4subtext.displayed4
+{
+  display: flex;
+  margin: 3rem;
+  margin-top: 7rem;
+  color: white;
+  z-index: 3;
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 2rem;
+}
+.fac5container{
+  width:22rem;
+  height:31rem;
+  position:absolute;
+  top:0rem;
+  left: 71rem;
+  object-fit: contain;
+  display: flex;
+  z-index:9;
+  text-align: center;
+  justify-content: center;
+  border-radius: 2rem;
+  color: transparent;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+} 
+.fac5{
+  position:absolute;
+  width:22rem;
+  height:31.5rem;
+  border-radius: 2rem;
+  transition: 0.3s all ease-in-out;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-in-out;
+  }
+.fac5.animate { 
+  animation: slideInLeft 0.7s forwards;
+}
+@keyframes slideInLeft {
+  to {
+      transform: translateX(0);
+  }
+}
+.fac5container:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  box-shadow: 3px 3px 1px 0px rgba(0, 0, 0, 0.70);
+  color:#F5BC25;
+}
+.fac5container:hover h1 {
+  background-color: #252323;
+}
+.fac5container h1 {
+  border-radius: 1.5rem;
+  top: 28.5rem;
+  width:13rem;
+  height:2.3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-family: morn;
+  position: absolute;
+  display: flex;
+}
+.fac5container .fac5subtext
+{
+  display: none;
+}
+
+.fac5container .fac5subtext.displayed5
+{
+  background-color: #252323;
+  border-radius: 1.2rem;
+  font-family: morn;
+  width:50rem;
+  height: 15rem;
+  display: flex;
+  margin: 2.5rem;
+  padding: 1.5rem;
+  padding-top: 4rem;
+  margin-top: 5rem;
+  color:#F5BC25;
+  z-index: 3;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.fac1container.active .fac1 {
+  filter: blur(3px); 
+  /* content: 'hello'; */
+} 
+.fac2container.active2 .fac2 {
+  filter: blur(3px); 
+}
+
+.fac3container.active3 .fac3 {
+  filter: blur(3px);
+}
+
+.fac4container.active4 .fac4 {
+  filter: blur(3px);
+}
+
+.fac5container.active5 .fac5 {
+  filter: blur(3px);
+} 
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .facilitycircle{
+    width: 300px;
+    height: 490px;
+    top:-18rem;
+    left:-18rem;
+  }
+  .facilityherotext{
+    height:4rem;
+    top:-28rem;
+    }
+    .facilityherotext h1{
+      font-size:2.5rem;
+    }
+    .facilitysub{
+      width:48rem;
+      height:3rem;
+    }
+    .facilitysubtext {
+      font-size: 1.1rem
+    }
+      .all5images{
+        background-color: aqua;
+        width:100vw;
+        height:26rem;
+        display: flex;
+        justify-content: center;
+      }
+      .fac1container {
+        width: 17rem;
+        height:26rem;
+        top: 0rem;
+        left: 3rem;
+      }
+      .fac1 {
+        width: 17rem;
+        height:26rem;
+      }
+      .fac1container  h1{
+        top: 23rem;
+        font-size: 1.1rem;
+      }
+      .fac1container .fac1subtext.displayed
+      {
+        width:50rem;
+        height: 19rem;
+        margin: 2rem;
+        padding: 1.2rem;
+        margin-top: 3rem;
+        font-size: 1rem;
+        line-height: 1.7rem;
+      }
+      
+      .fac2container{
+        width: 17rem;
+        height:26rem;
+        top: 0rem;
+        left: 13rem;
+      } 
+      .fac2{
+        width: 17rem;
+        height:26rem;
+      }
+
+      .fac2container h1 {
+        top: 23rem;
+        font-size: 1.1rem;
+      }
+      .fac2container .fac2subtext.displayed2
+      {
+        width:50rem;
+        height: 20rem;
+        margin: 1.7rem;
+        padding: 1rem;
+        margin-top: 2.2rem;
+        font-size: 1rem;
+        line-height: 1.8rem;
+      }
+      .fac3container{
+        width: 17rem;
+        height:26rem;
+        top: 0rem;
+        left: 23rem;
+      } 
+      .fac3{
+        width: 17rem;
+        height:26rem;
+      }
+
+      .fac3container h1 {
+        top: 23rem;
+        font-size: 1rem;
+      }
+      .fac3container .fac3subtext.displayed3
+      {
+        width:50rem;
+        height: 20rem;
+        margin: 1.7rem;
+        padding: 0.7rem;
+        margin-top: 1.7rem;
+        font-size: 0.9rem;
+        line-height: 1.7rem;
+      }
+      .fac4container{
+        width: 17rem;
+        height:26rem;
+        top: 0rem;
+        left: 34rem;
+      } 
+      .fac4{
+        width: 17rem;
+        height:26rem;
+      }
+
+      .fac4container h1 {
+        width:12rem;
+        top: 23rem;
+        font-size: 1rem;
+      }
+      .fac4container .fac4subtext.displayed4
+      {
+        width:50rem;
+        height: 19rem;
+        margin: 2rem;
+        padding: 1rem;
+        margin-top: 3rem;
+        font-size: 0.9rem;
+        line-height: 1.7rem;
+      }
+      .fac5container{
+        width: 17rem;
+        height:26rem;
+        top: 0rem;
+        left: 44rem;
+      } 
+      .fac5{
+        width: 17rem;
+        height:26rem;
+      }
+
+      .fac5container h1 {
+        top: 23rem;
+        font-size: 1rem;
+      }
+      .fac5container .fac5subtext.displayed5
+      {
+        width:50rem;
+        height: 15rem;
+        margin: 2rem;
+        padding: 1.5rem;
+        margin-top: 5rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
+      }
+}

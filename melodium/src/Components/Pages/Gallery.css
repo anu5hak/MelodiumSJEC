@@ -1,0 +1,167 @@
+@font-face {
+    font-family: monda;
+    src: url(../../../public/Fonts/Monda.ttf);
+  }
+.gallerycontainer {
+  position: relative;
+  width: 100vw;
+  height: 160vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery1rect{
+    position: absolute;
+    width:0.2rem;
+    height:16rem;
+    background-color: #FFF;
+    left:18rem;
+    top:6rem;
+    
+}
+.gallery2rect{
+    position: absolute;
+    width:16rem;
+    height:0.2rem;
+    top:6rem;
+    left:18rem;
+    background-color: #FFF;
+}
+.circlegallery{
+  position: absolute;
+  z-index: 3;
+  top:7.5rem;
+  left:79rem;
+  fill:#F5BC25;
+  backdrop-filter: blur(5px);
+}
+
+.melvideo{
+    top:14rem;
+    position:absolute;
+    scale:1.4;
+    filter: drop-shadow(7px 7px 4px rgba(0, 0, 0, 0.52));
+}
+.galleryherotext {
+  position: absolute;
+  width: 80rem;
+  height: 20rem;
+  top: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+.gallhero {
+  z-index: -1;
+  position: absolute;
+  text-align: center;
+  font-family: monda;
+  font-size: 17.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.2625rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: scale(0.5) translateY(100%);
+  transition: opacity 1s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.gallhero.animate {
+  animation: fadeInAndScale 1s ease-in-out forwards, slideInFromBottom 1.5s ease-in-out 1s forwards;
+}
+
+@keyframes fadeInAndScale {
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+@keyframes slideInFromBottom {
+  to {
+      transform: translateY(0);
+  }
+}
+
+.carousel{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top:51rem;
+  width:95vw;
+  height:22rem;
+  display:flex ;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+}
+.carousel img{
+  margin: 0;
+}
+.gall1{
+  position: absolute ;
+  top:0rem;
+  width:19rem;
+  height:22rem;
+  left:41.2rem;
+  border-radius: 1.2rem;
+  object-fit: cover;
+  
+}
+.gall2{
+  position: absolute ;
+  left:60.9rem;
+  width:16rem;
+  height:19rem;
+  border-radius: 1.2rem;
+  object-fit: cover;
+}
+.gall3{
+  position: absolute ;
+  left:24.5rem;
+  width:16rem;
+  height:19rem;
+  border-radius: 1.2rem;
+  object-fit: cover;
+}
+.gall4{
+  position: absolute ;
+  left:11rem;
+  width:13rem;
+  height:16rem;
+  border-radius: 1.2rem;
+  object-fit: cover;
+}
+
+.gall6{
+  position: absolute ;
+  left:77.4rem;
+  width:13rem;
+  height:16rem;
+  border-radius: 1.2rem;
+  object-fit: cover;
+}
+.gall5{
+  position: absolute ;
+  left:1.5rem;
+  width:9rem;
+  height:12rem;
+  border-radius: 1.2rem;
+  object-fit: cover;
+}
+.gall7{
+  position: absolute ;
+  left:91rem;
+  width:9rem;
+  height:12rem;
+  border-radius: 1.2rem;
+  object-fit: cover;
+}

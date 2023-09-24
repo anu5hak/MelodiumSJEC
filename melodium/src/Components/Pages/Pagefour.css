@@ -1,0 +1,507 @@
+
+.pagefourcontainer{
+    position:relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+@font-face {
+    font-family: "mont";
+    src: url("../../../public/Fonts/Montserrat.ttf");
+  }
+@font-face {
+    font-family:baloo;
+    src: url(../../../public/Fonts/Balooda.ttf);
+}
+@font-face {
+    font-family:morn;
+    src: url(../../../public/Fonts/Morn.ttf);
+}
+@font-face {
+    font-family:maven;
+    src: url(../../../public/Fonts/MavenPro.ttf);
+}
+@font-face {
+    font-family: Moulpali;
+    src: url(../../../public/Fonts/Moulpali.ttf);
+}
+.imgcontainer{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+}
+.pagefourbg{
+    position: relative;
+    top: -1rem;
+    left: -5rem;
+    object-fit: fill;
+    width:102.8%;
+    height: 101%;
+}
+.studiorow1{
+    position:  absolute;
+    border-radius: 3.9rem;
+    left:0rem;
+    top:9rem;
+    width:22.1rem;
+    height:17.6rem;
+    z-index:4;
+    transform: translateX(-100%);
+    transition: opacity 1s ease-in-out;
+}
+.studiorow1.animate, 
+.studiorow2.animate,
+.studiorow3.animate{
+    animation: slideInLeft 1.5s forwards;
+  }
+  @keyframes slideInLeft {
+    to {
+        transform: translateX(0);
+    }
+  }
+  
+.studiorow1 img{
+    border-radius: 3.9rem;
+    position: relative;
+    top:0rem;
+    left:-10rem;
+    width:28rem;
+    height:17.5rem;
+}
+.recordingstudio{
+    border-radius:3.8rem;
+    position:absolute;
+    width:23rem;
+    height:17.5rem;
+    top:0.2rem;
+    left: -1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: staat;
+    transition: 0.3s all ease-in-out;
+    letter-spacing: 0.2rem;
+}
+.recordingstudio h1{
+    position: relative;
+    color:transparent;
+    width:22.9rem;
+    height:17.3rem;
+    padding-top:7.3rem;
+    font-size: 1.95rem;
+    border-radius: 3.6rem;
+    top:-0.1rem;
+    z-index:8;
+    
+} 
+.studiorow1 :hover {
+    color: white;
+}
+.studiorow1:hover img{
+    filter: blur(3.5px);
+}
+/* pencil*/
+.studiorow2{
+    position:absolute;
+    top:9rem;
+    left:23rem;
+    width:28rem;
+    height:17.6rem;
+    z-index:4;
+    border-radius: 4rem;
+    transition: 0.2s all ease-in-out;
+    transform: translateX(-100%);
+     transition: opacity 1s ease-in-out;
+}
+.studiorow2 img{
+    border-radius: 4rem;
+    position:absolute;
+    margin: 0;
+    left:0rem;
+    top:0rem;
+    width:28rem;
+    height:17.5rem;
+    transition:filter 0.5s ease-in-out;
+}
+.pencilmike{
+    position:absolute;
+    border-radius: 4.1rem;
+    width:28rem;
+    height:17.5rem;
+    top:0rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.pencilmike h1{
+    position: absolute;
+    color:transparent;
+    top:0.1rem;
+    width:27.9rem;
+    height:17.3rem;
+    padding-top: 7.2rem;
+    font-size: 1.95rem;
+    font-family: staat;
+    border-radius: 4rem;
+    z-index:8;
+    transition: 0.3s all ease-in-out;
+    letter-spacing: 0.2rem;
+} 
+.studiorow2 :hover {
+    color: white;
+
+}
+.studiorow2:hover img{
+    filter: blur(3.5px);
+}
+
+/* mixer text */
+.studiorow3{
+    position:absolute;
+    top:9rem;
+    width:28rem;
+    height:17.6rem;
+    left:52rem;
+    z-index:4;
+    border-radius: 4rem;
+    transform: translateX(-100%);
+    transition: opacity 1s ease-in-out;
+}
+.studiorow3 img{
+    border-radius: 4rem;
+    position: absolute;
+    top:0rem;
+    left:0rem;
+    margin: 0ch;
+    width:28rem;
+    height:17.5rem;
+}
+.mixertext{
+    position:absolute;
+    border-radius: 4.1rem;
+    width:28rem;
+    height:17.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.mixertext h1{
+    position: relative;
+    color:transparent;
+    left:0.1rem;
+    width:27.8rem;
+    height:17.5rem;
+    padding-top:7.3rem;
+    font-size: 2rem;
+    font-family: staat;
+    border-radius: 4rem;
+    top:0rem;
+    z-index:8;
+    transition: 0.3s all ease-in-out;
+    letter-spacing: 0.2rem;
+} 
+.studiorow3 :hover {
+    color: white;
+
+}
+.studiorow3:hover img{
+    filter: blur(4px);
+} 
+/* mikes */
+ .studiorow4{
+    position:absolute;
+    left:81rem;
+    top:9rem;
+    width:28rem;
+    height:17.6rem;
+    z-index:4;
+    border-radius: 4.1rem;
+    transform: translateX(-100%);
+    transition: opacity 1s ease-in-out;
+}
+.studiorow4.animate { 
+    animation: slideInLeft 1.5s forwards;
+  }
+  @keyframes slideInLeft {
+    to {
+        transform: translateX(0);
+    }
+  }
+.studiorow4 img{
+    border-radius: 4.1rem;
+    position: absolute;
+    margin: 0;
+    width:28rem;
+    height:17.5rem;
+}
+.samemike{
+    z-index: 100;
+    border-radius: 4rem;
+    position: absolute;
+    width:27.3rem;
+    height:17.2rem;
+    top:0.2rem;
+    left:0.1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.samemike h1{
+    position: absolute;
+    color:transparent;
+    width:27.3rem;
+    height:17.2rem;
+    padding-top:7.3rem;
+    font-size: 2rem;
+    font-family: staat;
+    border-radius: 3.9rem;
+    top:0rem;
+    z-index:8;
+    transition: 0.3s all ease-in-out;
+    letter-spacing: 0.2rem;
+} 
+.studiorow4 :hover {
+    color: white;
+
+}
+.studiorow4:hover img{
+    filter: blur(4px);
+} 
+/* side mike */
+ .studiorow5 {
+    position: absolute;
+    border-radius: 3.8rem;
+    top: 27.5rem;
+    left:-14.5rem;
+    width:25rem;
+    height:18rem;
+    z-index: 4;
+    transform: translateX(100%);
+    transition: opacity 1s ease-in-out;
+}
+.studiorow5.animate,
+.studiorow6.animate,
+.studiorow7.animate,
+.studiorow8.animate,
+.studiorow9.animate { 
+    animation: slideInRight 1.5s forwards;
+  }
+@keyframes slideInRight {
+    to {
+        transform: translateX(0%); 
+    }
+}
+
+.studiorow5 img{
+    border-radius: 4rem;
+    position: absolute;
+    margin:0;
+    width:25rem;
+    height:18rem;
+}
+.studiorow5:hover img{
+    filter: blur(3.5px);
+}
+
+/*live room*/
+ .studiorow6{
+    position:absolute;
+    top: 27.5rem;
+    width:28rem;
+    height:17.6rem;
+    z-index:4;
+    left:11.5rem;
+    border-radius: 4.1rem;
+    transform: translateX(100%); 
+    transition: opacity 1s ease-in-out;
+}
+.studiorow6 img{
+    border-radius: 4.1rem;
+    position: absolute;
+    margin: 0;
+    width:28rem;
+    height:18rem;
+}
+.liveroomtext{
+    position:absolute;
+    width:28rem;
+    height:18rem;
+    top:0rem;
+    left:0rem;
+    border-radius: 4rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.liveroomtext h1{
+    position: relative;
+    color:transparent;
+    width:27.8rem;
+    left:0.1rem;
+    height:17.7rem;
+    padding-top:8rem;
+    font-size: 2rem;
+    font-family: staat;
+    border-radius: 3.9rem;
+    top:0.1rem;
+    z-index:8;
+    transition: 0.3s all ease-in-out;
+    letter-spacing: 0.2rem;
+} 
+.studiorow6 :hover {
+    color: white;
+
+}
+.studiorow6:hover img{
+    filter: blur(3.5px);
+} 
+/* mikes */
+.studiorow7{
+    position:absolute;
+    top: 27.5rem;
+    width:28rem;
+    height:18rem;
+    left:40.5rem;
+    z-index:4;
+    border-radius: 3.8rem;
+    transform: translateX(100%); 
+    transition: opacity 1s ease-in-out;
+}
+.studiorow7 img{
+    border-radius: 3.8rem;
+    position: absolute;
+    margin: 0;
+    width:28rem;
+    height:18rem;
+}
+.allmikes{
+    z-index: 100;
+    position: absolute;
+    border-radius: 3.6rem;
+    width:28rem;
+    height:17.8rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.allmikes h1{
+    position: relative;
+    color:transparent;
+    height:17.6rem;
+    width:27.8rem;
+    left:0.1rem;
+    padding-top:8rem;
+    font-size: 2.4rem;
+    font-family: staat;
+    border-radius: 3.6rem;
+    top:0rem;
+    z-index:8;
+    transition: 0.3s all ease-in-out;
+    letter-spacing: 0.2rem;
+} 
+.studiorow7 :hover {
+    color: white;
+}
+.studiorow7:hover img{
+    filter: blur(3.5px);
+}
+/* lounge room */
+.studiorow8{
+    position:absolute;
+    top: 27.5rem;
+    width:28rem;
+    height:18rem;
+    left:69.5rem;
+    z-index:4;
+    border-radius: 3.8rem;
+    transform: translateX(100%); 
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes slideInRight {
+    to {
+        transform: translateX(0%); 
+    }
+}
+.studiorow8 img{
+    border-radius: 4rem;
+    position: relative;
+    width:28rem;
+    height:18rem;
+    margin: 0%;
+}
+.loungeroom{
+    border-radius: 4rem;
+    position: absolute;
+    width:28rem;
+    top:0rem;
+    height:18rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.loungeroom h1{
+    position: absolute;
+    width:28rem;
+    top:0rem;
+    height:18rem;
+    color:transparent;
+    border-radius: 4rem;
+    padding-top:8rem;
+    font-size: 2rem;
+    font-family: staat;
+    top:0rem;
+    z-index:8;
+    transition: 0.3s all ease-in-out;
+    letter-spacing: 0.2rem;
+} 
+.studiorow8 :hover {
+    color: white;
+}
+.studiorow8:hover img{
+    filter: blur(3.5px);
+} 
+/* last half image */
+ .studiorow9{
+    position:absolute;
+    top: 27.5rem;
+    width:28rem;;
+    height:18rem;
+    left:98.5rem;
+    z-index:4;
+    border-radius: 4rem;
+    transform: translateX(100%);
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes slideInRight {
+    to {
+        transform: translateX(0%);
+    }
+}
+.studiorow9 img{
+    border-radius: 4rem;
+    position: absolute;
+    margin: 0;
+    width:14rem;
+    height:18rem;
+}
+.studiorow9:hover img{
+    filter: blur(3.5px);
+}
+.titlestudio{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    top:-47rem;
+    color: #000;
+    font-family:baloo;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 161.4%;
+    z-index: 5;
+} 
+
+

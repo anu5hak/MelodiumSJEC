@@ -1,0 +1,108 @@
+.pagesixcontainer{
+    position:relative;
+    width: 100vw;
+    height:172vh;
+    margin: 0;
+    padding: 0;
+  }
+  *{
+    margin:0;
+    padding:0;
+  }
+  @font-face {
+    font-family: "mont";
+    src: url("../../../public/Fonts/Montserrat.ttf");
+  }
+  @font-face {
+    font-family:baloo;
+    src: url(../../../public/Fonts/Balooda.ttf);
+  }
+  @font-face {
+    font-family:morn;
+    src: url(../../../public/Fonts/Morn.ttf);
+  }
+  @font-face {
+    font-family:maven;
+    src: url(../../../public/Fonts/MavenPro.ttf);
+  }
+  @font-face {
+    font-family: Moulpali;
+    src: url(../../../public/Fonts/Moulpali.ttf);
+  }
+  @font-face {
+    font-family: ava;
+    src: url(../../../public/Fonts/Avalon.ttf);
+  }
+  @font-face {
+    font-family: gothic;
+    src: url(../../../public/Fonts/LeagueGothic.ttf);
+  }
+  .circleser{
+    position : absolute;
+    top:0;
+    right:0;
+  }
+  .herotextser{
+    position: relative;
+    display:flex;
+    justify-content: center ;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-family: ava;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 191.4%; 
+    top:3rem;
+
+  }
+  .herotextser span{
+    color:#F5BC25;
+  }
+  .subser{
+    color: #A8A8A8;
+    font-family: gothic;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position:absolute;
+    top:30rem;
+    left:5rem;
+    width: 2rem;
+    height:34rem;
+  }
+
+  .serimages{
+    position: relative;
+    width: 85.3rem;
+    height: 66rem;
+    top:9rem;
+    left:11rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:8rem;
+    row-gap: 3rem;
+  }
+  .servicecircle{
+    position: absolute;
+    top:78rem;
+    left:3rem;
+}
+.service1rect{
+    position: absolute;
+    width:0.2rem;
+    height:12rem;
+    background-color: #FFF;
+    top:68rem;
+    left:102rem;
+}
+.service2rect{
+    position: absolute;
+    width:12rem;
+    height:0.2rem;
+    background-color: #FFF;
+    top: 79.8rem;
+    left:90.1rem;
+}

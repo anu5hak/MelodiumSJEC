@@ -1,0 +1,131 @@
+.pagereviewcontainer{
+    position: relative;
+    width: 100vw;
+    height:87vh;
+    display: flex;
+    justify-content: center;
+}
+@font-face {
+    font-family:morn;
+    src: url(../../../public/Fonts/Morn.ttf);
+}
+@font-face {
+    font-family:maven;
+    src: url(../../../public/Fonts/MavenPro.ttf);
+}
+@font-face {
+    font-family: Moulpali;
+    src: url(../../../public/Fonts/Moulpali.ttf);
+}
+@font-face {
+    font-family: mont;
+    src: url(../../../public/Fonts/Montserrat.ttf);
+  }
+  @font-face {
+    font-family: ava;
+    src: url(../../../public/Fonts/Avalon.ttf);
+  }
+  @font-face {
+    font-family: gothic;
+    src: url(../../../public/Fonts/LeagueGothic.ttf);
+  }
+
+.testi{
+    position: relative;
+    top:3rem;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    font-family:maven;
+    font-weight: 800;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+}
+.reviewcardcontainer{
+    position: absolute;
+    top:4rem;
+    width:95vw;
+    height:60vh;
+}
+.scroll-area {
+  top:3rem;
+	position: relative;
+	width: 100%;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.scroll {
+	height: 30rem;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	animation: all .3s ease-in;
+}
+
+.inner-scroll {
+  margin:1rem;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	padding: 8px 0 0 0;
+}
+
+.scroll::after {
+	content: '';
+	width: 100%;
+	height: 1rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.block-container {
+	display: flex;
+	padding-left: 1rem;
+}
+
+.block {
+  margin: 2rem;
+	width: 18rem;
+	height: 25rem;
+	background-color: #ffffff;
+	margin: 0 2rem 0 0;
+	border-radius: 1.2rem;
+	/* box-shadow: 0 0 8px 0 rgba(0,0,0,.1) */
+}
+
+.reviewrectangle1{
+  width:18rem;
+  height:7rem;
+  background-color:darkgrey;
+  object-fit: cover;
+  border-radius: 1.2rem;
+}
+.review1{
+  font-size:1.2rem;
+  line-height:1.5rem;
+  margin:1rem;
+  font-family: morn;
+  text-align: justify;
+  
+}
+.namereview{
+  font-size:2rem;
+  line-height:1.5rem;
+  text-align: end;
+  padding-top:2rem;
+  margin-right: 3rem;
+  font-family:ava ;
+}
+.ratereview{
+  text-align: end;
+  font-size: 1.5rem;
+  margin-top: 0.8rem;
+  margin-right: 2.5rem;
+  font-family:ava ;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+}

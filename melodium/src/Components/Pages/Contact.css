@@ -1,0 +1,339 @@
+.contactcontainer{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+@font-face {
+    font-family:morn;
+    src: url(../../../public/Fonts/Morn.ttf);
+}
+@font-face {
+    font-family:maven;
+    src: url(../../../public/Fonts/MavenPro.ttf);
+}
+@font-face {
+    font-family: Moulpali;
+    src: url(../../../public/Fonts/Moulpali.ttf);
+}
+@font-face {
+    font-family: "mont";
+    src: url("../../../public/Fonts/Montserrat.ttf");
+  }
+
+  .contactext{
+    position: relative;
+    height:4rem;
+    top:2rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact {
+    position: absolute;
+    color: #FFF;
+    font-family: staat;
+    font-size:3.3rem;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 161.4%; /* 116.208px */
+    letter-spacing: 0.4rem;
+  }
+  .location{
+    position: relative;
+    top:5rem;
+    left:4rem;
+  }
+  .locationtext {
+    position: relative;
+    text-align: left;
+    left: 11rem;
+    top: 0.7rem;
+    width: 14rem;
+    height: 3rem;
+  }
+  
+  .locatext {
+    position: relative;
+    color: #F5BC25; /* Set the desired color */
+    text-align: center;
+    font-family: mont;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 161.4%; /* 48.42px */
+    letter-spacing: 6px;
+    /* Remove underline on the link */
+  }
+  .locatext a{
+    color:#F5BC25;
+    text-decoration: none;
+  }
+  
+  .locatext:hover,
+  .locatext:active,
+  .locatext:focus {
+    /* No need to change color on hover, active, and focus states */
+    outline: none; /* Remove default focus outline */
+  }
+   
+
+  .locsubtext{
+    position: relative;
+    top:3rem;
+    left:6rem;
+    width:41rem;
+    height:5rem;
+    text-align: left;
+
+  }
+  .locsubtext h1 a{
+    position: relative;
+    color: #FFF;
+    font-family:mont;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 161.4%; 
+    text-decoration: none;
+  }
+  .callcontainer{
+    position: relative;
+    top:6rem;
+    left:5rem;
+  }
+.calltext{
+    position:relative ;
+    text-align: left;
+    left:10rem;
+    top:0.9rem;
+    width:14rem;
+    height: 3rem;
+  } 
+  .call{
+    position: relative;
+    color: #F5BC25;
+    text-align: center;
+    font-family: mont;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 161.4%; 
+    letter-spacing: 6px;
+  }
+  .phoneno{
+    position: relative;
+    top:4rem;
+    left:6rem;
+    width:41rem;
+    height:5rem;
+    text-align: left;
+  }
+  .phoneno h1{
+    position: absolute;
+    color: #FFF;
+    font-family:mont;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 161.4%; /* 29.052px */
+  }
+  .emailimg{
+    position: relative;
+    top:4rem;
+    left:5rem;
+  }
+  .emailtext{
+    position:relative ;
+    text-align: left;
+    left:8.6rem;
+    top:-0.5rem;
+    width:14rem;
+    height: 3rem;
+  } 
+  .email{
+    position: relative;
+    color: #F5BC25;
+    text-align: center;
+    font-family: mont;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 161.4%; 
+    letter-spacing: 6px;
+  }
+
+  .emailid{
+    position: relative;
+    top:2rem;
+    left:6rem;
+    width:41rem;
+    height:5rem;
+    text-align: left;
+  }
+  .emailid a{
+    position: absolute;
+    color: #FFF;
+    font-family:mont;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 161.4%;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+  }
+  .rectangleconatct{
+    position: relative;
+    width: 38rem;
+    height:38rem;
+    left:66rem;
+    top:-37rem;
+    z-index: 2;
+  }
+  .msgcontainer{
+    position:absolute;
+    top:2rem;
+    left:0rem;
+    width:36rem;
+    height:3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .msgcontainer h1{
+    position: relative;
+    font-size: 2.3rem;
+    letter-spacing: 0.2rem;
+    font-weight: 0;
+    font-family: staat;
+    font-weight: 50;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-container {
+    position: absolute;
+    width: 34rem;
+    height:38rem;
+    background: linear-gradient(#464646, #464646) padding-box,
+                linear-gradient(145deg, transparent 35%,#F5BC25,#F5BC25) border-box;
+    border: 2px solid transparent;
+    padding: 32px 24px;
+    font-family: mont;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+  
+  .form-container button:active {
+    scale: 0.95;
+  }
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    position: relative;
+    display: block;
+    margin-top:0.7rem;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 1rem;
+    top:4rem;
+  }
+  
+  .form-container .form-group input {
+    position: relative;
+    width: 90%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    margin-top: 0.6rem;
+    background-color: transparent;
+    border: 1px solid #717171;
+    font-size: 1rem;
+    font-weight: 600;
+    top:4rem;
+  }
+  
+  .form-container .form-group textarea {
+    position: relative;
+    width: 90%;
+    padding: 12px 16px;
+    border-radius: 8px;
+    resize: none;
+    color: #fff;
+    height: 96px;
+    margin-top: 0.6rem;
+    border: 1px solid #717171;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    top:4rem;
+  }
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color:#F5BC25;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color:#F5BC25;
+  }
+  
+  .form-container .form-submit-btn {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    font-family: inherit;
+    color: #ffffff;
+    font-weight: 500;
+    width: 11rem;
+    height: 3.2rem;
+    background-color: #717171;
+    border: 1px solid #ffffff;
+    padding: 12px 16px;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    letter-spacing: 0.1rem;
+    top:4rem
+  }
+  
+  .form-container .form-submit-btn:hover {
+    background-color: #fff;
+    border-color: #caac00;
+    color: black;
+  } 
+  .lastrectangle{
+    position: relative;
+    background-color: rgba(59, 58, 58, 0.9);
+    height:100vh;
+    width:12rem;
+    top:-82.5rem;
+    left:95rem;
+  }
+  
