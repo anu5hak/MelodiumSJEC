@@ -1,0 +1,14 @@
+GET  http://localhost:3001/BookingDisplay
+
+###
+
+POST http://localhost:3001/BookingAdded
+Content-Type: application/json
+
+{
+    "FirstName" :  "Preeona"
+}
+
+###
+
+DELETE  http://localhost:3001/BookingDelete/64e9c85490132242c7839c0b

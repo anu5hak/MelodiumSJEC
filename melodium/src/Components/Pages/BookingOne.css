@@ -3,6 +3,7 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
 }
 
 @font-face {
@@ -25,17 +26,20 @@ body
 }
 .FDates
 {
-    width: 70rem;
-    height: 6.5rem;
-    border: 3px solid #FFF;
-    padding-left: 5.25rem;
-    padding-right: 5.25rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .DatesS
 {
-    display: inline-block;
     display: flex;
+    width: 70rem;
+    padding-left: 5.25rem;
+    padding-right: 5.25rem;
+    height: 6.5rem;
+    border: 3px solid #FFF;
     align-items: center;
     justify-content: center;
     
@@ -128,7 +132,7 @@ body
 }
 .Header {
     position: absolute; 
-    top: 60%; 
+    top: 61%; 
     left: 50%; 
     transform: translate(-50%, -50%);
   }
@@ -158,27 +162,214 @@ body
     width:  75rem;
     align-items: center; 
     justify-content: center;
+    color: white;
+    font-family: 'Morn';
+    font-size: 3rem;
   }
+
   .DispTimeSlots > * {
-    margin: 1rem 1rem; /* Adjust the margin as needed */
+    margin: 1rem 1rem; 
   }
   .ProButton {
     position: absolute;
     top: 88%;
-    left: 50%; /* Position it horizontally at 50% from the left */
-    transform: translateX(-50%); /* Center it horizontally using transform */
+    left: 50%; 
+    transform: translateX(-50%); 
     text-align: center;
     width: 10rem;
     height: 4rem;
     border:3px solid #F5BC25;
-    border-radius: 2.5rem;;
-  }
-  .ProButton h1 {
+    border-radius: 2.5rem;
     font-family: 'Inter';
     color: white;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    background-color: transparent;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
   }
-  
+  .ProButton:hover
+  {
+    background-color: #F5BC25;
+    color: black;
+    font-weight: 600;
+  }
+  .Slot
+{
+    position: relative;
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; 
+    width: 15rem;
+    height: 3.5rem;
+    border-radius: 1.5rem;
+    background: #D9D9D9;
+    color: black;
+    font-family: 'Inter';
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.Slot:hover
+{
+    background-color: #E54545;
+}
+
+.Slot.selected {
+    background-color: #E54545; 
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+    .MMYY
+    {
+        font-size: 2.5rem;
+        margin-top: 0.5rem;
+    }
+    .DatesS
+    {
+        width: 50rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        height: 5.7rem;
+    }
+    .DayDate
+    {
+        width: 9.5rem;
+        height: 5.7rem;
+        margin-top: 0rem;
+        margin-left: 10px;
+        position: relative;
+        color: #A4A4A4;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    .DayDate .Date
+    {
+        font-size: 1.3rem;
+    }
+    .DayDate .Day
+    {
+        font-size: 1.35rem;
+    }
+    .SDayDate
+    {
+        width: 9.5rem;
+        height: 5.7rem;
+        margin-top: 0rem;
+        margin-left: 10px;
+    }
+    .SDayDate .Day
+    {
+        font-size: 1.3rem;
+    }
+    .SDayDate .Date
+    {
+        font-size: 1.3rem;
+    }
+    .DispTimeSlots
+    {
+        margin-top: 4.5rem;
+        width:  58rem;
+        font-size: 3rem;
+    }
+    .SelDate {
+        font-size: 1.2rem;
+      }
+      .Header 
+    {
+        top: 58.5%; 
+    }
+    .ProButton 
+    {
+        top: 90%;
+        width: 7.5rem;
+        height: 3rem;
+        border:3px solid #F5BC25;
+        border-radius: 2.5rem;
+        font-size: 1.3rem;
+      }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px){
+    body
+    {
+        overflow-y: scroll;
+    }
+    .MMYY
+    {
+        font-size: 2rem;
+        margin-top: 0.5rem;
+    }
+    .DatesS
+    {
+        width: 35rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        height: 5rem;
+    }
+    .DayDate
+    {
+        width: 9rem;
+        height: 5rem;
+        margin-top: 0rem;
+        margin-left: 12px;
+        position: relative;
+        color: #A4A4A4;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    .DayDate .Date
+    {
+        font-size: 0.8rem;
+    }
+    .DayDate .Day
+    {
+        font-size: 1.1rem;
+    }
+    .SDayDate
+    {
+        width: 9rem;
+        height: 5rem;
+        margin-top: 0rem;
+        margin-left: 12px;
+    }
+    .SDayDate .Day
+    {
+        font-size: 1rem;
+    }
+    .SDayDate .Date
+    {
+        font-size: 0.96rem;
+    }
+    .DispTimeSlots
+    {
+        margin-top: 3rem;
+        width:  38rem;
+        font-size: 3rem;
+        row-gap: 0;
+    }
+    .SelDate {
+        font-size: 1rem;
+      }
+      .Header 
+    {
+        top: 49%; 
+    }
+    .Calendar
+    {
+        scale: 0.7;
+    }
+    .ProButton 
+    {
+        top: 100%;
+        width: 6rem;
+        height: 2.5rem;
+        border:2px solid #F5BC25;
+        border-radius: 1rem;
+        font-size: 1rem;
+      }
+  }

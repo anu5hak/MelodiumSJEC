@@ -1,0 +1,300 @@
+.audio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+@font-face {
+  font-family: 'Morn';
+  src: url('../../../public/Fonts/Morn.ttf');
+}
+.audio .line {
+  height: 4px;
+  left: 377px;
+  position: absolute;
+  top: 131px;
+  width: 1548px;
+}
+
+.audio .text-wrapper {
+  position: absolute;
+  color: white;
+  font-family: 'Morn';
+  font-size: 4rem;   
+  top: 0rem;
+  left: 19rem;
+}
+
+.audio .text-wrapper-1 {
+  position: absolute;
+  color: white;
+  font-family: 'Morn';
+  font-size: 2.5rem;   
+  top: 10rem;
+  left: 19rem;
+}
+.media-line
+{
+    position: absolute;
+    left: 19rem;
+    top: 8rem;
+    background-color: #F5BC25;
+    height: 0.2rem;
+    width: 70rem;
+}
+
+.audio .text-wrapper-2 {
+  position: absolute;
+  color: white;
+  font-family: 'Morn';
+  font-size: 2.5rem;   
+  top: 27rem;
+  left: 19rem;
+}
+
+
+
+.audio .line-2 {
+  height: 6px;
+  left: 0;
+  position: absolute;
+  top: 875px;
+  width: 293px;
+}
+
+.audio .image-4 {
+  height: 30px;
+  left: 30px;
+  object-fit: cover;
+  position: absolute;
+  top: 1042px;
+  width: 30px;
+}
+
+.audio .text-wrapper-8 {
+  color: #fffffff7;
+  font-family: "Coda-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 68px;
+  letter-spacing: 0.24px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 951px;
+  white-space: nowrap;
+  width: 203px;
+}
+
+.audio .text-wrapper-9 {
+  color: #fffffff7;
+  font-family: "Coda-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 63px;
+  letter-spacing: 0.24px;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 1042px;
+  white-space: nowrap;
+  width: 139px;
+}
+
+.audio .image-5 {
+  height: 30px;
+  left: 30px;
+  mix-blend-mode: hard-light;
+  object-fit: cover;
+  position: absolute;
+  top: 948px;
+  width: 30px;
+}
+
+
+.audio .text-wrapper-10 {
+  border: 3px solid #F5BC25;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Morn';
+  font-size: 2rem;
+  font-weight: 400;
+  left: 19rem;
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.64px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 14rem;
+  white-space: nowrap;
+  width: 40rem;
+}
+
+.confirm-video-1
+{
+  width: 8rem;
+  height: 3.7rem;
+  border: 2px solid #F5BC25;
+  background-color: transparent;
+  font-family: 'Morn';
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 14rem;
+  left: 65rem;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+.confirm-video-1:hover
+{
+  background-color: #F5BC25;
+  color: black;
+  font-weight: 700;
+}
+.confirm-video-2
+{
+  width: 8rem;
+  height: 3.7rem;
+  border: 2px solid #F5BC25;
+  background-color: transparent;
+  font-family: 'Morn';
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 20rem;
+  left: 65rem;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+.confirm-video-2:hover
+{
+  background-color: #F5BC25;
+  color: black;
+  font-weight: 700;
+}
+
+.confirm-video-3
+{
+  width: 8rem;
+  height: 3.7rem;
+  border: 2px solid #F5BC25;
+  background-color: transparent;
+  font-family: 'Morn';
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 31rem;
+  left: 80rem;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+}
+.confirm-video-3:hover
+{
+  background-color: #F5BC25;
+  color: black;
+  font-weight: 700;
+}
+
+.audio .text-wrapper-11 {
+  border: 3px solid #F5BC25;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Morn';
+  font-size: 2rem;
+  font-weight: 400;
+  left: 19rem;
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.64px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 20rem;
+  white-space: nowrap;
+  width: 40rem;
+}
+.audio .text-wrapper-12 {
+  border: 3px solid #F5BC25;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Morn';
+  font-size: 2rem;
+  font-weight: 400;
+  left: 19rem;
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.64px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 31rem;
+  white-space: nowrap;
+  width: 20rem;
+}
+.audio .text-wrapper-13 {
+  border: 3px solid #F5BC25;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Morn';
+  font-size: 2rem;
+  font-weight: 400;
+  left: 42rem;
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.64px;
+  line-height: normal;
+  position: absolute;
+  text-align: left;
+  top: 31rem;
+  white-space: nowrap;
+  width: 35rem;
+}
+
+.audio .image-6 {
+  height: 51px;
+  left: 1412px;
+  mix-blend-mode: darken;
+  object-fit: cover;
+  position: absolute;
+  top: 27px;
+  width: 54px;
+}
+
+.audio .rectangle-2 {
+  background-color: #dda105b8;
+  border-radius: 20px;
+  height: 92px;
+  left: 409px;
+  position: absolute;
+  top: 542px;
+  width: 1485px;
+}
+
+.audio .overlap-3 {
+  background-color: #dda105b8;
+  border-radius: 20px;
+  height: 92px;
+  left: 401px;
+  position: absolute;
+  top: 1050px;
+  width: 1485px;
+}
+
+.audio .overlap-4 {
+  background-color: #dda105b8;
+  border-radius: 20px;
+  height: 92px;
+  left: 409px;
+  position: absolute;
+  top: 910px;
+  width: 1485px;
+}
+
+.audio .image-7 {
+  height: 64px;
+  left: 1952px;
+  mix-blend-mode: lighten;
+  object-fit: cover;
+  position: absolute;
+  top: 1139px;
+  width: 55px;
+}
+

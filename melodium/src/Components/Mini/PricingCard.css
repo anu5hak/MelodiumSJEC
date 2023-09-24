@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Maven';
+    src: url('../../../public/Fonts/MavenPro.ttf');
+}
+@font-face {
+    font-family: 'Mate';
+    src: url('../../../public/Fonts/Mate.ttf');
+}
+.PricingCardContainer
+{
+    position: relative;
+    width: 20rem;
+    height: 11.5rem;
+    border-radius: 0.9rem;
+    background-color: #2F2E2C;
+}
+#price-circle
+{
+    position: absolute;
+    top: -3rem;
+    left: 13.5rem;
+}
+.price-type-h1
+{
+    position: absolute;
+    font-family: Maven;
+    left: 1rem;
+    top: -0.7rem;
+    font-size: 1.7rem;
+}
+#bottom-right-card
+{
+    position: absolute;
+    top: -2.2rem;
+    left: -0.05rem;
+    border-radius: 0.9rem;
+}
+#rupee
+{
+    position: absolute;
+    color: #FFF;
+    text-align: center;
+    font-family: Mate;
+    font-size: 1.75rem;
+    font-style: normal;
+    font-weight: 400;
+    font-family: Mate;
+    top: 3rem;
+    left: 1rem;
+}
+.amount
+{
+    color: #F5BC25;
+    text-align: center;
+    font-family: Maven;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+}
+.amount span
+{
+    color: #FFF;
+}
+.Features
+{
+    position: absolute;
+    color: white;
+    font-family: Maven;
+    left: 1rem;
+    top: 7rem;
+}
+.Features h2
+{
+    color: #F5BC25;
+    font-family: Maven;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50%; 
+}
+#white-color
+{
+    color: white;
+}
+.test
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    height: 20rem;
+}

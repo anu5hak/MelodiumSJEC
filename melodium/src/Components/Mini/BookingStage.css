@@ -1,21 +1,19 @@
-body
-{
-    width: 100%;
-    height: 100%;
-}
-
 @font-face {
     font-family: 'Morn';
     src: url('../../../public/Fonts/Morn.ttf');
 }
 .Numbering
 {
+    /* position: relative; */
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    margin: 0;
+    /* background-color: aqua; */
+    
 }
 .Numbering h1 {
-    display: inline;
     font-family: 'Morn';
     color: white;
     font-size: 3rem;
@@ -25,7 +23,8 @@ body
     padding: 0.5rem 1.7rem;
     text-align: center;
     border-radius: 50%;
-    background-color: #F5BC25; /* Default background color */
+    background-color: red;
+    background-color: transparent; /* Default background color */
     border: 3px solid #F5BC25; /* Default border color */
 }
 
@@ -35,9 +34,10 @@ body
     color: black;
     padding: 0.5rem 2rem;
 }
-
-.Numbering h1:not(:first-child) {
-    background-color: transparent; 
+.Numbering .StageText
+{
+    background-color: #F5BC25; 
+    color: black;
 }
 .Numbering .Line1
 {
@@ -58,12 +58,13 @@ body
     align-items: center;
     justify-content: center;
     margin-top: -40px;
+    width: 100vw;
 }
 .Titles h1
 {
     display: inline;
+    text-align: center;
     color: white;
-    color: #FFF;
     font-family: 'Morn';
     font-size: 2.2rem;
     font-style: normal;
@@ -74,25 +75,66 @@ body
 {
     margin: 0;
 }
-
-@media screen and (max-width:760px) 
+@media screen and (min-width: 1024px) and (max-width: 1279px)
 {
+    .Numbering
+    {
+        margin: 0;
+    }
     .Numbering h1
     {
-        font-size: 1.5rem;
-        padding: 0.2rem 1rem;
+        font-size: 2.5rem;
+        padding: 0.3rem 1.5rem;
     }
-    .Numbering h1:nth-child(1)
+    
+    .Titles h1
     {
-        padding: 0.2rem 1.1rem;
+        font-size: 1.4rem;
+        margin-right: 16rem;
     }
-    .Titles
+    .Numbering .Line1
     {
-        margin-top: -20px;
+        width: 25rem;
+        height: 0.1875rem;
+    }
+    .Numbering .Line2
+    {
+        width: 25rem;
+        height: 0.1875rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+    .Numbering
+    {
+        margin: 0;
+    }
+    .Numbering h1
+    {
+        font-size: 2rem;
+        padding: 0.1rem 1.1rem;
+    }
+    .Numbering h1:nth-child(1) {
+        padding: 0.1rem 1.2rem;
     }
     .Titles h1
     {
-        font-size: 0.9rem;
-        margin-right: 6.2rem;
+        font-size: 1rem;
+        margin-right: 11rem;
+        margin-top: 1.6rem;
+    }
+    .Titles h1:last-child
+    {
+        margin-top: 1rem;
+    }
+    .Numbering .Line1
+    {
+        width: 15rem;
+        height: 0.1875rem;
+    }
+    .Numbering .Line2
+    {
+        width: 15rem;
+        height: 0.1875rem;
     }
 }

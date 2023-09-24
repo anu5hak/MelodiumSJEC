@@ -1,0 +1,131 @@
+.ReviewContainer
+{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.review-title
+{
+    position: absolute;
+    font-family: morn;
+    font-size: 4rem;   
+    top: -1rem;
+    left: 19rem;
+}
+.review-line
+{
+    position: absolute;
+    left: 19rem;
+    top: 7rem;
+    background-color: #F5BC25;
+    height: 0.2rem;
+    width: 70rem;
+}
+.review-input-fields
+{
+    position: absolute;
+    width: 70rem;
+    height: 10rem;
+    left: 19rem;
+    top: 10rem;
+    /* background-color: aqua; */
+}
+#review-id-input-label
+{
+    position: absolute;
+    color: white;
+    font-family: Avalon;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    top: 0;
+    left: 0;
+}
+#review-id-input
+{
+    position: absolute;
+    color: black;
+    font-family: Avalon;
+    padding: 0.3rem 0.3rem;
+    font-size: 1.5rem;
+    width: 20rem;
+    top: 4.5rem;
+} 
+#review-name-input-label
+{
+    position: absolute;
+    color: white;
+    font-family: Avalon;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    top: 0rem;
+    left: 45rem;
+}
+#review-name-input
+{
+    position: absolute;
+    color: black;
+    font-family: Avalon;
+    padding: 0.3rem 0.3rem;
+    font-size: 1.5rem;
+    width: 20rem;
+    top: 4.5rem;
+    left: 45rem;
+} 
+#review-rating-input-label
+{
+    position: absolute;
+    color: white;
+    font-family: Avalon;
+    font-size: 2.5rem;
+    top: 9rem;
+    left: 0;
+}
+#review-rating-input
+{
+    position: absolute;
+    color: black;
+    font-family: Avalon;
+    padding: 0.3rem 0.3rem;
+    font-size: 1.5rem;
+    width: 20rem;
+    top: 12.5rem;
+} 
+#review-input-label
+{
+    position: absolute;
+    top:17rem;
+    color: white;
+    font-family: Avalon;
+    font-size: 2.5rem;
+}
+#review-input
+{
+    position: absolute;
+    top:20.5rem;
+    color: black;
+    font-family: Avalon;
+    font-size: 1.5rem;
+    width: 40rem;
+    height: 8rem;
+}
+#review-submit-button
+{
+    position: absolute;
+    width: 8rem;
+    height: 3rem;
+    font-family: Morn;
+    font-size: 2rem;
+    top: 41rem;
+    left: 50rem;
+    color: white;
+    background-color: #252525;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+#review-submit-button:hover
+{
+    background-color: #F5BC25;
+    color: black;
+}

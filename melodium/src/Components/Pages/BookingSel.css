@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'Amar';
+    src: url('../../../public/Fonts/Amaranth.ttf');
+}
+@font-face {
+    font-family: 'Morn';
+    src: url('../../../public/Fonts/Morn.ttf');
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../../public/Fonts/Montserrat.ttf');
+}
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url('../../../public/Fonts/LeagueGothic.ttf');
+}
+.BookingImagesContainer {
+    position: relative;
+  }
+  
+  #BookingControlR {
+    position: absolute;
+    top: 6rem;
+    right: 9rem;
+    width: 28rem;
+    height: 25rem;
+    border-radius: 1.1825rem;
+    box-shadow: 4.4px 4.41px 2.5px 0px rgba(0, 0, 0, 0.70);
+    z-index: -1;
+    object-fit: cover;
+    transition: 0.3s all ease-in-out;
+  }
+
+  #BookingControlR:hover
+  {
+    transform: scale(1.1);
+  }
+  
+  #BookingMic {
+    position: absolute;
+    top: 20rem;
+    right: 2rem;
+    width: 23rem;
+    height: 21rem;
+    border-radius: 2.1875rem;
+    object-fit: cover;
+    object-position: 0% 70%;
+    z-index: 0;
+    transition: 0.3s all ease-in-out;
+  }
+  #BookingMic:hover
+  {
+    transform: scale(1.1);
+  }
+  .Grids
+  {
+    position: relative;
+  }
+  #GridDots
+  {
+    position: absolute;
+    width: 70px;
+    height: 300px;
+    top: 24rem;
+    object-fit: cover;
+    left: -47rem;
+  }
+  .StarContainer
+  {
+    position: relative;
+  }
+  #Star
+  {
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    top: 2rem;
+    left: 39rem;
+  }
+  .BookingTextContainer
+  {
+    position: absolute;
+    width: 35rem;
+    height: 5rem;
+    right: 10rem;
+    top: 10rem;
+    font-size: 1px;
+  }
+  .BookingTextContainer h1,a
+  {
+    font-family: 'Morn';
+    color: #FFF;
+    font-size: 2rem;
+    font-style: normal ;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .BookingTextContainer a
+  {
+    color: #F5BC25;
+  }
+  .BookingTextContainer p
+  {
+    color: #BABABA;
+    font-family: 'Montserrat';
+    font-size: 1.35rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 161.4%; /* 2.72363rem */
+  }
+  .BookingButtonContainer
+  {
+    margin-top: 4rem;
+    width: 38rem;
+  }
+  .JamRoomButton
+  {
+    width: 15rem;
+    height: 4rem;
+    border-radius: 1.6rem;
+    background: rgba(245, 188, 37, 0.81);
+    cursor: pointer;
+    color: #000;
+    font-family: 'LeagueGothic';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.128rem;
+    transition: 0.2s all ease-in-out;
+  }
+  #Guitar
+  {
+    position: relative;
+    width: 2.2rem;
+    height: 2.2rem;
+    top: 0.2rem;
+    left: 0.7rem;
+
+  }
+
+  .StudioButton
+  {
+    margin-left: 2rem;
+    width: 15rem;
+    height: 4rem;
+    border-radius: 1.6rem;
+    background: rgba(245, 188, 37, 0.81);
+    cursor: pointer;
+    width: 15rem;
+    height: 4rem;
+    border-radius: 1.6rem;
+    background: rgba(245, 188, 37, 0.81);
+    cursor: pointer;
+    color: #000;
+    font-family: 'LeagueGothic';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.128rem;
+    transition: 0.2s all ease-in-out;
+  }
+  #Microphone
+  {
+    position: relative;
+    width: 2.2rem;
+    height: 2.2rem;
+    top: 0.2rem;
+    left: 0.7rem;
+  }
+
+  .StudioButton:hover
+  {
+    background-color: #F5BC25;
+    transform: scale(1.2);
+  }
+  .JamRoomButton:hover
+  {
+    background-color: #F5BC25;
+    transform: scale(1.2);
+  }
+  .LogoContainer
+  {
+    position: relative;
+  }
+  #StudioLogo
+  {
+    position: absolute;
+    top: 37.5rem;
+    left: 40rem;
+    width: 5rem;
+    height: 5rem;
+  }
+  @media screen and (max-width:1440px) 
+  {
+        #BookingControlR
+        {
+            top: 5rem;
+            left: -32rem;
+            width: 25rem;
+            height: 23rem;
+        }
+        #BookingMic 
+        {
+            top: 17rem;
+            left: -20rem;
+            width: 20rem;
+            height: 19rem;
+        }
+        #GridDots
+        {
+            width: 65px;
+            height: 260px;
+            top: 23rem;
+            left: -42rem;
+        }
+        #Star
+        {
+            width: 5rem;
+            height: 5rem;
+            top: 1.5rem;
+            left: 37rem;
+        }
+        .BookingTextContainer
+        {
+            width: 32rem;
+            height: 3.3rem;
+            right: 6.6rem;
+            top: 10rem;
+        }
+        .BookingTextContainer h1,a
+        {
+            font-size: 1.7rem;
+        }
+        .BookingTextContainer p
+        {
+            font-size: 1.2rem;
+        }
+        .BookingButtonContainer
+        {
+            margin-top: 2rem;
+        }
+        #MelodiumLogo
+        {
+            top: 36rem;
+            left: 37rem;
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+  }
+  @media screen and (max-width:1280px) 
+  {
+        #BookingControlR
+        {
+            top: 4rem;
+            left: -32rem;
+            width: 23rem;
+            height: 20rem;
+        }
+        #BookingMic 
+        {
+            top: 17rem;
+            left: -20rem;
+            width: 18rem;
+            height: 17rem;
+        }
+        #GridDots
+        {
+            width: 60px;
+            height: 250px;
+            top: 19rem;
+            left: -38rem;
+        }
+        #Star
+        {
+            width: 4rem;
+            height: 4rem;
+            top: 1rem;
+            left: 34rem;
+        }
+        .BookingTextContainer
+        {
+            width: 32rem;
+            height: 3.3rem;
+            right: 6.6rem;
+            top: 6.6rem;
+        }
+        .BookingTextContainer h1,a
+        {
+            font-size: 1.7rem;
+        }
+        .BookingTextContainer p
+        {
+            font-size: 1.2rem;
+        }
+        .BookingButtonContainer
+        {
+            margin-top: 2rem;
+        }
+        #MelodiumLogo
+        {
+            top: 33rem;
+            left: 34rem;
+            width: 3.7rem;
+            height: 3.7rem;
+        }
+  }
