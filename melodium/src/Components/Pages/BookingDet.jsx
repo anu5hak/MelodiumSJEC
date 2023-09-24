@@ -12,8 +12,7 @@ import './BookingDet.css'
 function BookingDet() {
   return (
     <>
-       <BookingStage stage={3}/>
-       <BookingThree/>
+       <BookingOne/>
     </>
   )
 }

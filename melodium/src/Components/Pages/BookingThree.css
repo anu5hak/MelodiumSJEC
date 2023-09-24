@@ -2,7 +2,7 @@
     font-family: 'Morn';
     src: url('../../../public/Fonts/Morn.ttf');
 }
-.FormContainerOne
+.DisplayContainer
 {
     position: relative;
     width: 76rem;
@@ -10,8 +10,9 @@
     border-radius: 1.875rem;
     background: #3A3A3A;
     color: #FFF;
+    left: 10rem;
 }
-.FormContainerOne h1
+.DisplayContainer h1
 {
     position: absolute;
     font-family: 'Morn';
@@ -22,16 +23,19 @@
     top: 2rem;
     left:8rem;
 }
-.FormContainerOne h1:nth-child(4)
+.DisplayContainer h1:nth-child(4)
 {
-    top: 10rem;
+    color:#fff;
+    top: 5rem;
+    left:40rem;
+    border-bottom: 3px solid #fff;
 }
-.FormContainerOne h1:nth-child(5)
+.DisplayContainer h1:nth-child(5)
 {
-    top: 10rem;
-    left: 40rem;
+    top: 8.5rem;
+    left: 8rem;
 }
-.FormContainerOne input,select
+.DisplayContainer input,select
 {
     position: absolute;
     width: 27rem;
@@ -46,33 +50,54 @@
     color: #FFF;
     transition: 0.3s all ease-in-out;
 }
-
-.FormContainerOne input:nth-child(2)
+.DisplayContainer h1
 {
-    top: 6.5rem;
-    left: 8rem;
+    color: #F5BC25;
 }
-.FormContainerOne :nth-child(3)
+.DisplayContainer h1:nth-child(3)
 {
-    top: 6.5rem;
+    top: 5rem;
+    left: 8rem;
+    color:#FFF;
+    border-bottom: 3px solid white;
+}
+.DisplayContainer :nth-child(2)
+{
+    top: 2rem;
     left: 40rem;
 }
-.FormContainerOne :nth-child(6)
+.DisplayContainer :nth-child(6)
 {
-    top: 14.5rem;
-    left: 8rem;
-}
-.FormContainerOne :nth-child(7)
-{
-    top: 14.5rem;
+    top: 8.5rem;
     left: 40rem;
 }
-.FormContainerOne :nth-child(8)
+.DisplayContainer :nth-child(7)
 {
-    top: 17.7rem;
+    color: #FFF;
+    top: 11rem;
     left: 8rem;
+    border-bottom: 3px solid white;
 }
-.FormContainerOne select
+.DisplayContainer :nth-child(8)
+{
+    top: 11rem;
+    left: 40rem;
+    color: white;
+    border-bottom: 3px solid white;
+}
+.DisplayContainer :nth-child(9)
+{
+    top: 15rem;
+    left: 8rem;
+    color: #F5BC25;
+}
+.DisplayContainer :nth-child(10)
+{
+    top: 18rem;
+    left: 8rem;
+    color: #F5BC25;
+}
+.DisplayContainer select
 {
     top: 22rem;
     left: 8rem;
@@ -84,15 +109,15 @@
     cursor: pointer;
 
 }
-.FormContainerOne input:hover
+.DisplayContainer input:hover
 {
     background-color: #E54545;
 }
-.FormContainerOne select:hover
+.DisplayContainer select:hover
 {
     background-color: #E54545;
 }
-.FormContainerOne #Submit
+.DisplayContainer #Submit
 {
     position: absolute;
     top: 85%;
@@ -113,18 +138,44 @@
     transition: 0.3s all ease-in-out;
     cursor: pointer;
 }
-.FormContainerOne #Submit:hover
+.DisplayContainer #Submit:hover
 {
     background-color: #F5BC25;
     color: black;
     font-weight: 600;
 }
-.FormContainerOne #icon
+
+.TimeSlotContainer
 {
     position: absolute;
-    width: 1.7rem;
-    height: 3rem;
-    top: 22.5rem;
-    left: 64rem;
-    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60rem;
+    height: 8rem;
+    top: 31.5rem;
+    left: 18rem;
 }
+.TimeSlotContainer > *
+{
+    margin-left: 1rem;
+}
+#ConfirmButton {
+    position: absolute;
+    font-family: 'Morn';
+    font-size: 1.7rem;
+    font-weight: 600;
+    width: 13rem;
+    height: 4rem;
+    border-radius: 2.5rem;
+    background: rgba(245, 188, 37, 0.81);
+    left: 50%; 
+    transform: translateX(-50%); 
+    top: 38rem;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+  }
+
+  #ConfirmButton:hover
+  {
+    background-color: #F5BC25;
+  }

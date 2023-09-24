@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Mini/TimeSlots.css'
 
-function TimeSlots() {
+export const TimeSlots = ({ SlotValue }) => {
   return (
     <>
-      <input type="button" className='Slot' value="9:00am - 10:00am" />
+      <div
+        className="Slot"
+      >
+        {SlotValue}
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default TimeSlots
+export default TimeSlots;

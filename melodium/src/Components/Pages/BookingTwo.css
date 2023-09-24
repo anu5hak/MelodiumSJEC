@@ -5,6 +5,7 @@
 .FormContainerOne
 {
     position: relative;
+    left: 10rem;
     width: 76rem;
     height: 32rem;
     border-radius: 1.875rem;

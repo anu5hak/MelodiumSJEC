@@ -6,8 +6,14 @@ import GridDots from '../../SVG/Grid.svg'
 import Star from '../../SVG/Star.svg'
 import { Icon } from '@iconify/react';
 import MelodiumLogo from '../../Images/MelodiumLogo.png'
+import { Link,useNavigate} from 'react-router-dom'; 
 
 function BookingSel() {
+  const navigate = useNavigate();
+  const navigateToTimeSlots = (Room) =>
+  {
+    navigate("/BookingTimeSlots",{state: {Type:Room}})
+  }
   return (
     <>
       <div className="BookingImagesContainer">
@@ -27,18 +33,19 @@ function BookingSel() {
             seamless creative experience.
         </p>
         <div className="BookingButtonContainer">
-          <button className='JamRoomButton'>
-            Jam Room
-            <Icon id='Guitar' icon="emojione:guitar" />
-          </button>
-          <button className='StudioButton'>
-            Studio
-            <Icon id='Microphone' icon="noto-v1:studio-microphone" />
+        <button className='JamRoomButton' onClick={() => navigateToTimeSlots("Jam Room")}>
+          Jam Room
+          <Icon id='Guitar' icon="emojione:guitar" />
+        </button>
+
+          <button className='StudioButton' onClick={() => navigateToTimeSlots("Studio")}>
+                  Studio
+                  <Icon id='Microphone' icon="noto-v1:studio-microphone" />
           </button>
         </div>
       </div>
       <div className="LogoContainer">
-        <img id='MelodiumLogo' src={MelodiumLogo} alt="" />
+        <img id='StudioLogo' src={MelodiumLogo} alt="" />
       </div>
     </>
   );

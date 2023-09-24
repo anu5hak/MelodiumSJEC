@@ -1,0 +1,65 @@
+.PricingPageContainer
+{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto; /* Corrected property */
+}
+
+@font-face {
+    font-family: Karantina;
+    src: url('../../../public/Fonts/Karantina.ttf');
+}
+
+.PricingTitle
+{
+    position: absolute;
+    color: #000;
+    text-align: center;
+    font-family: Karantina;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    top: 0rem;
+}
+.paper-background
+{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    object-fit: contain;
+    z-index: -1;
+}
+.pricing-left-rectangle
+{
+    position: absolute;
+    top:23rem;
+    left: 0rem;
+    width: 2rem;
+    height: 12rem;
+    background-color: #F5BC25;
+}
+.CardContainer
+{
+    position: absolute;
+    top: 12.8rem;
+    width: 70rem;
+    height: 34rem;
+    column-gap: 4rem;
+    row-gap: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+} 
+#disclaimer
+{
+    position: relative;
+    top: -1rem;
+    font-family: Maven;
+    font-size: 1.5rem;
+}

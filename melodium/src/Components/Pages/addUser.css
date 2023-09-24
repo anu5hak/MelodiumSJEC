@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Morn';
+    src: url('../../../public/Fonts/Morn.ttf');
+}
+.add-user-background
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+#bgIMG
+{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.6;
+}
+.adding-user-rectangle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 7rem;
+    width: 30rem;
+    height: 35rem;
+    backdrop-filter: blur(5px); /* Apply a blur effect */
+}
+
+.adding-user-rectangle::before {
+    content: "";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #21201E; /* Your desired background color */
+    opacity: 0.9;
+}
+#MelodiumLogo{
+    position: absolute;
+    object-fit: cover;
+    top: 1rem;
+    left: 13.3rem;
+    width: 4rem;
+    height: 4rem;
+}
+#login-text
+{
+    position: absolute;
+    left: 12.3rem;
+    font-family: Morn;
+    top: 4.5rem;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+}
+#username
+{
+    position: absolute;
+    top:10rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 2;
+    font-family: Morn;
+}
+#enter-username
+{
+    position: absolute;
+    z-index: 2;
+    top:12.5rem;
+    border: 2px solid #F5BC25;
+    height: 2rem;
+    width: 25rem;
+    padding-left: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: Morn;
+    background-color: transparent;
+    /* backdrop-filter: blur(5px); */
+    opacity: 0.8;
+    left: 2rem;
+    transition: 0.1s all ease-in-out;
+}
+
+#enter-username:hover
+{
+    backdrop-filter: blur(10px);
+}
+#password
+{
+    position: absolute;
+    top:16rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 2;
+    font-family: Morn;
+}
+#enter-password
+{
+    position: absolute;
+    z-index: 2;
+    top:18.5rem;
+    border: 2px solid #F5BC25;
+    height: 2rem;
+    width: 25rem;
+    padding-left: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-family: Morn;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    opacity: 0.8;
+    left: 2rem;
+}
+#enter-password:hover
+{
+    backdrop-filter: blur(5px);
+}
+#confirm-password-label
+{
+    position: absolute;
+    top:22rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    z-index: 2;
+    font-family: Morn;
+}
+#confirm-password
+{
+    position: absolute;
+    z-index: 2;
+    top:24.5rem;
+    border: 2px solid #F5BC25;
+    height: 2rem;
+    width: 25rem;
+    padding-left: 0.5rem;
+    color: white;
+    font-family: Morn;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    opacity: 0.8;
+    left: 2rem;
+}
+#confirm-password:hover
+{
+    backdrop-filter: blur(5px);
+}
+
+.login-user-container {
+    position: absolute;
+    top: 30rem;
+    left: 12rem;
+    width: 6rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 2px solid #F5BC25;
+    border-radius: 1rem;
+    color: white;
+    overflow: hidden; /* Hide overflow for pseudo-element */
+    cursor: pointer; /* Add pointer cursor for interaction */
+    transition: 0.2s all ease-in-out;
+}
+.login-user-container:hover
+{
+    background-color: #F5BC25;
+    color: black;
+}
+

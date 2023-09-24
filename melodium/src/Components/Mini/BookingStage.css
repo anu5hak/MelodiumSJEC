@@ -4,12 +4,16 @@
 }
 .Numbering
 {
+    /* position: relative; */
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    margin: 0;
+    /* background-color: aqua; */
+    
 }
 .Numbering h1 {
-    display: inline;
     font-family: 'Morn';
     color: white;
     font-size: 3rem;
@@ -19,6 +23,7 @@
     padding: 0.5rem 1.7rem;
     text-align: center;
     border-radius: 50%;
+    background-color: red;
     background-color: transparent; /* Default background color */
     border: 3px solid #F5BC25; /* Default border color */
 }
@@ -53,12 +58,13 @@
     align-items: center;
     justify-content: center;
     margin-top: -40px;
+    width: 100vw;
 }
 .Titles h1
 {
     display: inline;
+    text-align: center;
     color: white;
-    color: #FFF;
     font-family: 'Morn';
     font-size: 2.2rem;
     font-style: normal;
@@ -68,4 +74,67 @@
 .Titles h1:last-child
 {
     margin: 0;
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px)
+{
+    .Numbering
+    {
+        margin: 0;
+    }
+    .Numbering h1
+    {
+        font-size: 2.5rem;
+        padding: 0.3rem 1.5rem;
+    }
+    
+    .Titles h1
+    {
+        font-size: 1.4rem;
+        margin-right: 16rem;
+    }
+    .Numbering .Line1
+    {
+        width: 25rem;
+        height: 0.1875rem;
+    }
+    .Numbering .Line2
+    {
+        width: 25rem;
+        height: 0.1875rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+    .Numbering
+    {
+        margin: 0;
+    }
+    .Numbering h1
+    {
+        font-size: 2rem;
+        padding: 0.1rem 1.1rem;
+    }
+    .Numbering h1:nth-child(1) {
+        padding: 0.1rem 1.2rem;
+    }
+    .Titles h1
+    {
+        font-size: 1rem;
+        margin-right: 11rem;
+        margin-top: 1.6rem;
+    }
+    .Titles h1:last-child
+    {
+        margin-top: 1rem;
+    }
+    .Numbering .Line1
+    {
+        width: 15rem;
+        height: 0.1875rem;
+    }
+    .Numbering .Line2
+    {
+        width: 15rem;
+        height: 0.1875rem;
+    }
 }

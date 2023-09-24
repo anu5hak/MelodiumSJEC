@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'Morn';
+  src: url('../../../public/Fonts/Morn.ttf');
+}
+.dashboard-menu {
+    height: 95vh;
+    left: 5vh;
+    position: fixed;
+    top: 1.5rem;
+    width: 14rem;
+    background-color: #000000;
+    border-radius: 62px;
+    display: flex;
+    justify-content: center;
+  } 
+  .studio-image-text-cont
+  {
+    position: relative;
+    top: 3rem;
+    width: 11rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+  }
+  .menu-logo {
+    height: 3.5rem;
+    width: 3.5rem;
+    object-fit: cover;
+  }
+  .spanMel {
+    color: #fffffff7;
+    font-family: "Cambria-Regular", Helvetica;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    line-height: normal;
+    text-align: center;
+    position: relative;
+    left: 0.5rem;
+  }
+  .dash-menu-line1
+  {
+    position: absolute;
+    top: 9rem;
+    height: 0.1rem;
+    width: 12rem;
+    background-color: white;
+  }
+  .dashboard-menu-container
+  {
+    position: absolute;
+    height: fit-content;
+    width: 14rem;
+    top: 10rem;
+    font-size: 1.5rem;
+    font-family: 'Morn';
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  .dashboard-menu-container ul {
+    list-style-type: none;
+    position: relative;
+    left: -2rem;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    cursor: pointer;
+  }
+  .dashboard-menu-container li
+  {
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  .dashboard-menu-container li:first-child
+  {
+    margin-top: 0;
+    cursor: pointer;
+  }
+  .dash-menu-line2
+  {
+    position: absolute;
+    top: 33rem;
+    height: 0.1rem;
+    width: 12rem;
+    background-color: white;
+  }
+  .dashboard-menu-container2
+  {
+    position: absolute;
+    height: fit-content;
+    width: 14rem;
+    top: 33rem;
+    font-size: 1.5rem;
+    font-family: 'Morn';
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  .dashboard-menu-container2 ul {
+    list-style-type: none;
+    position: relative;
+    left: -2rem;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    cursor: pointer;
+  }
+  .dashboard-menu-container2 li
+  {
+    margin-top: 1.7rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .icon-text
+  {
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: 0.2s all ease-in-out;
+  }
+  .icon-text:hover
+  {
+    color: #F5BC25;
+  }
+
+  .dashboard-menu-container2 li:first-child
+  {
+    margin-top: 0;
+    cursor: pointer;
+  }
+  /* .dashboard-menu-container2 li:hover
+  {
+    color: #F5BC25;
+  } */
+
+  .menu-link {
+    text-decoration: none;
+    cursor: pointer;
+    display: flex; /* Ensure the link takes the full width of the li */
+    align-items: center; /* Center align text and icon vertically */
+    padding: 0.5rem; /* Add some padding to improve clickability */
+    transition: 0.2s all ease-in-out;
+    color: white; /* Set the initial text color */
+  }
+  
+  .menu-link:hover {
+    color: #f5bc25; /* Change text color on hover */
+  }

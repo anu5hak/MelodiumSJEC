@@ -72,10 +72,10 @@
   #Star
   {
     position: absolute;
-    width: 6rem;
-    height: 6rem;
-    top: 1rem;
-    left: 40rem;
+    width: 7rem;
+    height: 7rem;
+    top: 2rem;
+    left: 39rem;
   }
   .BookingTextContainer
   {
@@ -147,6 +147,11 @@
     border-radius: 1.6rem;
     background: rgba(245, 188, 37, 0.81);
     cursor: pointer;
+    width: 15rem;
+    height: 4rem;
+    border-radius: 1.6rem;
+    background: rgba(245, 188, 37, 0.81);
+    cursor: pointer;
     color: #000;
     font-family: 'LeagueGothic';
     font-size: 2rem;
@@ -179,13 +184,13 @@
   {
     position: relative;
   }
-  #MelodiumLogo
+  #StudioLogo
   {
     position: absolute;
-    top: 42rem;
-    left: 42rem;
-    width: 3.7rem;
-    height: 3.7rem;
+    top: 37.5rem;
+    left: 40rem;
+    width: 5rem;
+    height: 5rem;
   }
   @media screen and (max-width:1440px) 
   {
