@@ -3,10 +3,10 @@ import './Analytics.css'
 import DashboardMenu from '../Mini/DashboardMenu'
 import PieRechartComponent from '../Mini/PieChartDash'
 // import DayChart from '../Mini/DayChart'
-import {
-  chart as ChartJS,
+// import {
+//   chart as ChartJS,
 
-} from ChartJS
+// } from ChartJS
 
 function Analytics() {
   return (
