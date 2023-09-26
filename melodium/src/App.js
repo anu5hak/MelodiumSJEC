@@ -88,6 +88,7 @@ function App() {
           <Route path="/Dashboard/Mediatest" element={<MediaTest/>} />
           <Route path="/Dashboard/AddUser" element={<AddUser/>} />
           <Route path="/Dashboard/Pricing" element={<Pricing/>} />
+          <Route path="/Booking" element={<BookingSel/>} />
         </Routes>
     </Router> 
     <div className='App'>
