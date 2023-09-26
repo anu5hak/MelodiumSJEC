@@ -171,7 +171,7 @@
       transform: translateY(0);
   }
 }
-button {
+#book-now-button {
   padding: 8px 26px;
   background: #F5BC25;
   font-size: 2.2rem;
@@ -186,7 +186,7 @@ button {
   transition: all .3s ease-in-out;
 }
 
-button:hover {
+#book-now-button:hover {
   background: transparent;
   color: #F5BC25;
   box-shadow: 0 0 25px #fec1958c;

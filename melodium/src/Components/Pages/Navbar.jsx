@@ -26,6 +26,10 @@ const Navbar = () => {
     let HandleClick = (type) => {
 
         let scrollToPosition = 0;
+        if (type === "Home") {
+            // Calculate the pixel value equivalent to 310vh
+            scrollToPosition = 0;
+          }
         
         if (type === "Facilities") {
           // Calculate the pixel value equivalent to 310vh
@@ -35,13 +39,17 @@ const Navbar = () => {
             // Calculate the pixel value equivalent to 310vh
             scrollToPosition = (window.innerHeight * 510) / 100;
           }
-          if (type === "Gallery") {
+          if (type === "Booking") {
             // Calculate the pixel value equivalent to 310vh
             scrollToPosition = (window.innerHeight * 682) / 100;
           }
+          if (type === "Gallery") {
+            // Calculate the pixel value equivalent to 310vh
+            scrollToPosition = (window.innerHeight * 792) / 100;
+          }
           if (type === "Contact") {
             // Calculate the pixel value equivalent to 310vh
-            scrollToPosition = (window.innerHeight * 929) / 100;
+            scrollToPosition = (window.innerHeight * 1030) / 100;
           }
         console.log(scrollToPosition)
         window.scrollTo({
@@ -76,7 +84,7 @@ const Navbar = () => {
             {/* <div className="mobilemenuicon">
                 <PiSlidersBold size="2rem"/>
             </div> */}
-            <img src={logo}/>
+            <img id="navbar-logo" src={logo}/>
             <div className="menu-link">
                 <ul>
                     <li>

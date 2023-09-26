@@ -398,6 +398,7 @@ function DashboardBooking() {
   
   return (
     <>
+        <div className="dbookingcont">
                <div className="DBookingContainer">
                {/* <button onClick={DeleteColl}>Delete</button> */}
                <DashboardMenu/>
@@ -413,12 +414,13 @@ function DashboardBooking() {
                             />
                             <input type="submit" value="Search" id='search-button' />
                         </form>
+                        <button className='StudioButtonD' onClick={()=>getTypeBookings("Studio")}>
+                        Studio
+                      </button>
                               <button className='JamRoomButtonD' onClick={()=>getTypeBookings("Jam Room")}>
                                   Jam Room
                               </button>
-                      <button className='StudioButtonD' onClick={()=>getTypeBookings("Studio")}>
-                        Studio
-                      </button>
+                      
                       <button className='BlockButton' onClick={blockBookings}>
                         Block
                       </button>
@@ -428,7 +430,7 @@ function DashboardBooking() {
                             <input
                                 type="date"
                                 name="BookingDate"
-                                id="BookingDate"
+                                id="BookingDateSelect"
                                 placeholder='Date'
                                 value={selectedDate}
                                 onChange={e => setSelectedDate(e.target.value)}
@@ -537,6 +539,7 @@ function DashboardBooking() {
             </div>
           )}
         </div>
+                </div>
                 </div>
     </>
   )

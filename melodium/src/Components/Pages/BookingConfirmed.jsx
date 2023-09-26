@@ -3,8 +3,8 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import './BookingConfirmed.css';
 
 function BookingConfirmed() {
-  const location = useLocation();
-  const bookingID = location.state.BookingID;
+  // const location = useLocation();
+  // const bookingID = location.state.BookingID;
   const navigate = useNavigate();
   const [fadeOut, setFadeOut] = useState(false);
 
@@ -25,7 +25,7 @@ function BookingConfirmed() {
           setFadeOut(true);
 
           setTimeout(() => {
-            navigate('/Booking');
+            navigate('/');
           }, 1000); // Navigate after the fade-out animation completes
         }, 3000); // Start the fade-out effect after 3 seconds
       });
@@ -41,16 +41,18 @@ function BookingConfirmed() {
 
   return (
     <>
-      <div className={`confirm ${fadeOut ? 'booking-confirmed-fade-out' : ''}`}>
+    <div className="BookingConfirmedContainer">
+    <div className={`confirm ${fadeOut ? 'booking-confirmed-fade-out' : ''}`}>
         <svg className="confirm__progress">
           <circle className="confirm__value" cx="50%" cy="50%" r="54" />
         </svg>
         <div className="confirm__inner" />
-      </div>
+    </div>
       <div className={`booking-confirmed-title hidden ${fadeOut ? 'booking-confirmed-fade-out' : ''}`}>
         <h1>Booking Confirmed</h1>
-        <h1 id='booking-confirm-id'>Booking ID: <span>{bookingID}</span></h1>
+        <h1 id='booking-confirm-id'>Booking ID: <span>12343</span></h1>
       </div>
+    </div>
     </>
   );
 }

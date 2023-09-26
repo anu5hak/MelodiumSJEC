@@ -2,16 +2,23 @@
     font-family: 'Morn';
     src: url('../../../public/Fonts/Morn.ttf');
 }
-.FormContainerOne
+.Booking-two
 {
     position: relative;
-    left: 10rem;
+    width: 100vw;
+    height: 100vh;
+}
+.FormContainerOne {
+    position: absolute;
     width: 76rem;
     height: 32rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 1.875rem;
     background: #3A3A3A;
     color: #FFF;
-}
+  }
 .FormContainerOne h1
 {
     position: absolute;
@@ -20,17 +27,21 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    top: 2rem;
+    top: 3.5rem;
     left:8rem;
 }
 .FormContainerOne h1:nth-child(4)
 {
-    top: 10rem;
+    top: 11.5rem;
 }
 .FormContainerOne h1:nth-child(5)
 {
-    top: 10rem;
+    top: 11.5rem;
     left: 40rem;
+}
+.FormContainerOne h1:nth-child(8)
+{
+    top: 19rem;
 }
 .FormContainerOne input,select
 {

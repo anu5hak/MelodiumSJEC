@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import './BookingOne.css'
 import BookingStage from '../Mini/BookingStage'
-import {Link, Routes, Route, useNavigate, Navigate, useLocation} from 'react-router-dom';
+import {Link,  useNavigate, Navigate, useLocation} from 'react-router-dom';
 const API_BASE = 'http://localhost:3001'
 var days = []
 function getDate() {
@@ -172,6 +172,7 @@ function BookingOne({setHasCompletedTimeSlots}) {
   };
   return (
     <>
+    <div className="BookingOneContainer">
         <form onSubmit={handleFormSubmit}>
           <BookingStage stage={1}/>
           <h1 className='MMYY'>{weekDates[0].month} {weekDates[0].year}</h1>
@@ -214,6 +215,7 @@ function BookingOne({setHasCompletedTimeSlots}) {
         </div>
           <input type="Submit" value="Proceed" className='ProButton'/>
         </form>
+      </div>
     </>
   );
 }

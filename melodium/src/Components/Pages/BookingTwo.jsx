@@ -50,6 +50,7 @@ function BookingTwo() {
   return (
     <>
       <BookingStage stage={2}/>
+      <div className="Booking-two">
         <div className="FormContainerOne">
             <form onSubmit={handleFormSubmit}>
             <h1>Name</h1>
@@ -94,10 +95,11 @@ function BookingTwo() {
           id='icon'
           onClick={toggleDropdown}
         />
-          </div>
+        </div>
           <input type="submit" id='Submit' value="Proceed" />
         </form>
         
+        </div>
         </div>
     </>
   )

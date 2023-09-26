@@ -1,7 +1,21 @@
-import React from "react";
+import React,{useState} from "react";
 import homeimg from './Images/homeimg.jpg'
 import "./Home.css"
 const Home = () => {
+    let HandleClick = (type) => {
+
+        let scrollToPosition = 0;
+          if (type === "Booking") {
+            // Calculate the pixel value equivalent to 310vh
+            scrollToPosition = (window.innerHeight * 682) / 100;
+          }
+        console.log(scrollToPosition)
+        window.scrollTo({
+          top: scrollToPosition,
+          behavior: 'auto',
+        });
+      }
+      const [scrolling, setScrolling] = useState(false);
     return (
         <>
         <div className="homeconatiner">
@@ -14,7 +28,7 @@ const Home = () => {
                 <h1>THOUGHTS, <span>IDEAS AND ART!</span></h1>
             </div>
             <div className="buttoncontainer">
-            <button>
+            <button id="book-now-button" onClick={()=>HandleClick("Booking")}>
                     BOOK NOW!
                 </button>
             </div>

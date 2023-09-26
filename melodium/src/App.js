@@ -39,10 +39,25 @@ function App() {
   };
   return (
     <>
-    {/* <DashboardMenu/> */}
-      <Router>
+    <div className='App'>
         <Routes>
-          <Route path="/Booking" element={<BookingSel/>} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar/>
+              <Home />
+              <Pagetwo />
+              <PageFour />
+              <Pagefive />
+              <Pagesix />
+              <BookingSel />
+              <Gallery />
+              <PageReview />
+              <Contact />
+              </>
+          }
+        />
           <Route path="/BookingTimeSlots" element={<BookingOne setHasCompletedTimeSlots={setHasCompletedTimeSlots}/>} />
           <Route
           path="/BookingDetails"
@@ -90,27 +105,7 @@ function App() {
           <Route path="/Dashboard/Pricing" element={<Pricing/>} />
           <Route path="/Booking" element={<BookingSel/>} />
         </Routes>
-    </Router> 
-    <div className='App'>
-          <Navbar />
-          <Home />
-          <Pagetwo />
-          <PageFour />
-          <Pagefive />
-          <Pagesix />
-          <BookingSel/>
-          <Gallery /> 
-          <PageReview />
-          <Contact />
         </div>
-   {/* <Login/> 
-    <AddUser/>
-  <Reviews/> 
-  <Pricing/>
-  <BookingConfirmed/> */}
-  {/* <DashboardBooking/>
-  <Media/> */}
-  {/* <MediaTest/> */}
     </>
   );
 }
