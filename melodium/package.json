@@ -18,19 +18,10 @@
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
-    "react-icons": "^4.10.1",
-    "react-router": "^6.15.0",
-    "react-router-dom": "^6.15.0",
-    "react-scripts": "^5.0.1",
-    "react-scroll": "^1.8.9",
-    "react-youtube": "^10.1.0",
-=======
     "react-router-dom": "^6.15.0",
     "react-scripts": "^5.0.1",
     "react-youtube": "^10.1.0",
     "recharts": "^2.8.0",
->>>>>>> 689fd3100f27a4901a7c7edf3b6c51f199b7e000
     "web-vitals": "^2.1.4"
   },
   "scripts": {

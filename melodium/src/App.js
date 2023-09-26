@@ -1,8 +1,6 @@
 import './App.css';
 import React,{useState} from 'react';
 import { BrowserRouter as Router, Route, Routes,Navigate } from 'react-router-dom'
-import './Components/Pages/BookingDet'
-import BookingDet from './Components/Pages/BookingDet';
 import BookingSel from './Components/Pages/BookingSel';
 import BookingOne from './Components/Pages/BookingOne';
 import BookingTwo from './Components/Pages/BookingTwo';
@@ -17,7 +15,15 @@ import Media from './Components/Pages/Media'
 import MediaTest from './Components/Pages/MediaTest';
 import DashboardMenu from './Components/Mini/DashboardMenu';
 import Analytics from './Components/Pages/Analytics';
-// import DashboardMenu from './Components/Mini/DashboardMenu';
+import Home from "./Components/Pages/Home";
+import Navbar from './Components/Pages/Navbar';
+import Pagetwo from './Components/Pages/Pagetwo';
+import PageFour from './Components/Pages/Pagefour';
+import Pagefive from './Components/Pages/Pagefive';
+import Pagesix from './Components/Pages/Pagesix';
+import Gallery from './Components/Pages/Gallery';
+import PageReview from './Components/Pages/PageReview';
+import Contact from './Components/Pages/Contact';
 
 
 function App() {
@@ -82,6 +88,20 @@ function App() {
           <Route path="/Dashboard/Pricing" element={<Pricing/>} />
         </Routes>
     </Router> 
+
+    <div className='App'>
+          {/* <Navbar /> */}
+          {/* <Home /> */}
+           <Pagetwo />
+         {/* <PageFour />
+          <Pagefive />
+          <Pagesix />
+          <Gallery /> 
+          <PageReview />
+          <Contact /> */}
+        </div>
+
+
    {/* <Login/> 
     <AddUser/>
   <Reviews/> 

@@ -1,5 +1,4 @@
 import React,{useEffect,useState} from "react";
-import { PiSlidersBold } from "react-icons/pi";
 import "./Navbar.css"
 import logo from '../Pages/Images/logo.png';
 
