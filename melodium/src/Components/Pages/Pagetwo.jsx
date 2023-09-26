@@ -3,6 +3,8 @@ import pagetwo from './Images/pagetwo.png'
 import mike2 from './Images/mike2.png'
 import pagethree from './Images/pagethree.png'
 import "./Pagetwo.css"
+import YouTube from "react-youtube";
+
 function Pagetwo (){
     const [inView1, setInView1] = useState(false);
 
@@ -26,6 +28,9 @@ function Pagetwo (){
           if (!inView1 && (rect4.top <= window.innerHeight && rect4.bottom >= 0)) {
             setInView1(true);
           }
+          // if (!inView1 && (ytvid.top <= window.innerHeight && ytvid.bottom >= 0)) {
+          //   setInView1(true);
+          // }
       };
   
       window.addEventListener("scroll", handleScroll);
@@ -34,6 +39,25 @@ function Pagetwo (){
       };
     }, [inView1]);
     
+    const [videoUrl, setVideoUrl] = useState(null);
+
+  useEffect(() => {
+    // Make a GET request to your server to retrieve the YouTube video URL for video 1
+    fetch('http://localhost:3001/GetVideo/1')
+      .then(response => response.json())
+      .then(data => {
+        if (data.videoURL) {
+          setVideoUrl(data.videoURL);
+          console.log("Video:"+videoUrl)
+        } else {
+          console.error('No video URL found for video 1.');
+        }
+      })
+      .catch(error => console.error('Error fetching video 1 URL:', error));
+  }, []);
+
+
+
     return (
         <>
         <div className="pagetwocontainer">
@@ -63,7 +87,13 @@ function Pagetwo (){
         </div>
         
         <div className="pagetwoimagecontainer">
-            <img className={`pagetwoimg ${inView1 ? "animate" : ""}`} src={pagetwo} />
+            {/* <YouTube videoId={videoUrl} className={`pagetwoimg ${inView1 ? "animate" : ""}`} /> */}
+            {/* <YouTube videoId={videoUrl} className="check"/> */}
+            {/* <YouTube videoId={videoUrl} className={`ytvid ${inView1 ? "animate" : ""}`} /> */}
+            <div className={`pagetwoimg ${inView1 ? "animate" : ""}`}>
+            <YouTube videoId={videoUrl} className="video-two"/>
+            </div>
+            {/* <img className={`pagetwoimg ${inView1 ? "animate" : ""}`} src={pagetwo} /> */}
         </div>
         
         <div className="rectangle32"></div>

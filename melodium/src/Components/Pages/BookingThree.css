@@ -2,16 +2,23 @@
     font-family: 'Morn';
     src: url('../../../public/Fonts/Morn.ttf');
 }
-.DisplayContainer
+.BookingThreeContainer
 {
+    width: 100vw;
+    height: 100vh;
     position: relative;
+}
+.DisplayContainer {
+    position: absolute;
     width: 76rem;
-    height: 32rem;
+    height: 34rem;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 1.875rem;
     background: #3A3A3A;
     color: #FFF;
-    left: 10rem;
-}
+  }
 .DisplayContainer h1
 {
     position: absolute;
@@ -20,21 +27,67 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    top: 2rem;
+    color: #F5BC25;
+    top: 3rem;
     left:8rem;
+}
+.DisplayContainer :nth-child(3)
+{
+    top: 3rem;
+    left: 40rem;
 }
 .DisplayContainer h1:nth-child(4)
 {
-    color:#fff;
-    top: 5rem;
-    left:40rem;
-    border-bottom: 3px solid #fff;
+    top: 6rem;
+    left: 8rem;
+    color:#FFF;
+    border-bottom: 3px solid white;
 }
 .DisplayContainer h1:nth-child(5)
 {
-    top: 8.5rem;
+    color:#fff;
+    top: 6rem;
+    left:40rem;
+    border-bottom: 3px solid #fff;
+}
+.DisplayContainer h1:nth-child(6)
+{
+    top: 11rem;
     left: 8rem;
 }
+.DisplayContainer :nth-child(7)
+{
+    top: 11rem;
+    left: 40rem;
+}
+.DisplayContainer :nth-child(8)
+{
+    color: #FFF;
+    top: 13.5rem;
+    left: 8rem;
+    border-bottom: 3px solid white;
+}
+.DisplayContainer :nth-child(9)
+{
+    top: 13.5rem;
+    left: 40rem;
+    color: white;
+    border-bottom: 3px solid white;
+}
+.DisplayContainer :nth-child(10)
+{
+    top: 18rem;
+    left: 8rem;
+    color: #F5BC25;
+}
+.DisplayContainer :nth-child(11)
+{
+    top: 1rem;
+    left: 67rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
 .DisplayContainer input,select
 {
     position: absolute;
@@ -50,53 +103,10 @@
     color: #FFF;
     transition: 0.3s all ease-in-out;
 }
-.DisplayContainer h1
-{
-    color: #F5BC25;
-}
-.DisplayContainer h1:nth-child(3)
-{
-    top: 5rem;
-    left: 8rem;
-    color:#FFF;
-    border-bottom: 3px solid white;
-}
-.DisplayContainer :nth-child(2)
-{
-    top: 2rem;
-    left: 40rem;
-}
-.DisplayContainer :nth-child(6)
-{
-    top: 8.5rem;
-    left: 40rem;
-}
-.DisplayContainer :nth-child(7)
-{
-    color: #FFF;
-    top: 11rem;
-    left: 8rem;
-    border-bottom: 3px solid white;
-}
-.DisplayContainer :nth-child(8)
-{
-    top: 11rem;
-    left: 40rem;
-    color: white;
-    border-bottom: 3px solid white;
-}
-.DisplayContainer :nth-child(9)
-{
-    top: 15rem;
-    left: 8rem;
-    color: #F5BC25;
-}
-.DisplayContainer :nth-child(10)
-{
-    top: 18rem;
-    left: 8rem;
-    color: #F5BC25;
-}
+
+
+
+
 .DisplayContainer select
 {
     top: 22rem;
@@ -150,10 +160,10 @@
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    width: 60rem;
+    width: 70rem;
     height: 8rem;
-    top: 31.5rem;
-    left: 18rem;
+    top: 33.5rem;
+    left: 22rem;
 }
 .TimeSlotContainer > *
 {
@@ -170,7 +180,7 @@
     background: rgba(245, 188, 37, 0.81);
     left: 50%; 
     transform: translateX(-50%); 
-    top: 38rem;
+    top: 42rem;
     transition: 0.2s all ease-in-out;
     cursor: pointer;
   }
@@ -178,4 +188,12 @@
   #ConfirmButton:hover
   {
     background-color: #F5BC25;
+  }
+  .melodium-logo-confirm
+  {
+    position: absolute;
+    top: 0.6rem;
+    left: 0.8rem;
+    width: 4rem;
+    height: 4rem;
   }

@@ -11,16 +11,23 @@
     font-family: 'Morn';
     src: url('../../../public/Fonts/Morn.ttf');
 }
- 
-  .confirm {
-    top:10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 15rem;
-    height: 15rem;
-  }
+ .BookingConfirmedContainer
+ {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+ }
+ .confirm {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17rem;
+  height: 17rem;
+}
   
   .confirm:after {
     content: "";
@@ -153,13 +160,15 @@
     justify-content: center;
     text-align: center;
     left: 50%;
-    top: 75%;
+    top: 60%;
     transform: translate(-50%, -50%);
     animation: bookingtitle 2s forwards; /* Add this animation */
   }
   .booking-confirmed-title h1
   {
-    font-family: 'Morn'
+    font-family: 'Morn';
+    color: white;
+    
   }
   .booking-confirmed-title span
   {

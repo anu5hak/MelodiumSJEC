@@ -30,8 +30,8 @@
     src: url(../../../public/Fonts/Moulpali.ttf);
   }
   @font-face {
-    font-family: ava;
-    src: url(../../../public/Fonts/Avalon.ttf);
+    font-family: "ava";
+    src: url("../../../public/Fonts/Avalon.ttf");
   }
   @font-face {
     font-family: gothic;
@@ -49,7 +49,7 @@
     align-items: center;
     color: #FFF;
     text-align: center;
-    font-family: ava;
+    font-family: "ava";
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;

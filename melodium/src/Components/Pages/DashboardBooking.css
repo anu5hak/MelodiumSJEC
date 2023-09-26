@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 /* body
+=======
+.dbookingcont
+>>>>>>> dcd6d8420608bf4edbce6843be370d903bb30281
 {
+  width: 100vw;
+  height: 100vh;
     overflow: hidden;
 } */
 
@@ -22,7 +28,7 @@
     margin-left: 0rem;
     width: 100rem;
     height: 48rem;
-    left: 8rem;
+    left: 6rem;
     top: 3rem;
 }
 .table-scroll h1
@@ -34,7 +40,7 @@
 }
 table {
     table-layout: fixed;
-    width: 77rem;
+    width: 75rem;
     height: 48rem;
     color: white;
     border-radius: 3rem;
@@ -47,7 +53,7 @@ table {
     overflow: hidden;
     word-wrap: break-word;
     text-overflow: ellipsis;
-    min-width: 7rem;
+    min-width: 7.75rem;
     /* width: xxrem; */ /* Optionally set width if needed */
 }
 thead tr
@@ -63,7 +69,7 @@ tr
     border-right: 1px solid #ccc;
     padding: 7px; /* Adjust padding for consistent spacing */
     font-size: 1rem;
-    max-width: 6rem;
+    max-width: 7.75rem;
     /* width: xxrem; */ /* Optionally set width if needed */
 }
 tbody {
@@ -97,7 +103,7 @@ tbody tr {
 .UtilityBar
 {
     position: relative;
-    left: 20rem;
+    left: 18rem;
     top:2rem;
     width: 76rem;
     height: 4rem;
@@ -194,7 +200,7 @@ tbody tr {
   color: black;
   font-weight: 700;
 }
-#BookingDate
+#BookingDateSelect
 {
     background-color: #1A1818;
     color: #F5BC25;
@@ -202,19 +208,19 @@ tbody tr {
     padding: 0.2rem 1rem;
     border-radius: 0.7rem;
     margin-top: 0.3rem;
-    height: 1.2rem;
+    height: 1.8rem;
     color-scheme: dark;
     cursor: pointer;
     transition: 0.3s all ease-in-out;
 }
-#BookingDate:hover
+#BookingDateSelect:hover
 {
   background-color: #F5BC25;
   color: black;
   font-weight: 700;
   color-scheme: light;
 }
-.JamRoomButtonD
+.StudioButtonD
   {
     position:absolute;
     width: 7rem;
@@ -241,7 +247,7 @@ tbody tr {
   }
   
 
-  .StudioButtonD
+  .JamRoomButtonD
   {
     position:absolute;
     width: 7rem;

@@ -34,7 +34,7 @@
 .pagefourbg{
     position: relative;
     top: -1rem;
-    left: -5rem;
+    left: 0rem;
     object-fit: fill;
     width:102.8%;
     height: 101%;

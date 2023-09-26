@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 import TimeSlots from '../Mini/TimeSlots';
 import BookingStage from '../Mini/BookingStage';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-
+import melodiumlogo from '../../Images/MelodiumLogo.png'
 
 
 function generateRandomBookingNumber(length) {
@@ -94,27 +94,31 @@ function BookingThree() {
 
   return (
     <>
+    <div className="BookingThreeContainer">
       <BookingStage stage={3} />
       <div className="DisplayContainer">
-        <h1>Name:</h1>
-        <h1>Contact Number:</h1>
-        <h1 id="FirstName">{userDetails.FirstName} {userDetails.LastName}</h1>
-        <h1>{userDetails.PhoneNumber}</h1>
-        <h1>Email:</h1>
-        <h1>Type of Session:</h1>
-        <h1>{userDetails.EmailAddress}</h1>
-        <h1>{userDetails.Service}</h1>
-        <h1>Slots:</h1>
-        {/* <h1>Date: </h1> */}
-      </div>
-      <div className="TimeSlotContainer">
-        {Slots.selectedTimeSlots.map((slotValue, index) => (
+          <img class="melodium-logo-confirm" src={melodiumlogo} alt="" />
+          <h1>Name:</h1>
+         <h1>Contact Number:</h1>
+         <h1 id="FirstName">{userDetails.FirstName} {userDetails.LastName}</h1>
+         <h1>{userDetails.PhoneNumber}</h1>
+         <h1>Email:</h1>
+         <h1>Type of Session:</h1>
+         <h1>{userDetails.EmailAddress}</h1>
+         <h1>{userDetails.Service}</h1>
+         <h1>Slots:</h1>
+         <h1>{Slots.date}</h1>
+       </div>
+       <div className="TimeSlotContainer">
+         {Slots.selectedTimeSlots.map((slotValue, index) => (
           <TimeSlots key={index} SlotValue={slotValue} />
         ))}
       </div>
       <button id='ConfirmButton' onClick={bookingDets}>Confirm</button>
+      </div>
     </>
   );
 }
 
 export default BookingThree;
+

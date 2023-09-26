@@ -10,8 +10,9 @@
     position: absolute;
     font-family: morn;
     font-size: 4rem;   
-    top: -1rem;
+    top: 2rem;
     left: 19rem;
+    color: white;
 }
 .review-line
 {

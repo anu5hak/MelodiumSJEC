@@ -1,10 +1,10 @@
-body
+/* body
 {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: scroll;
-}
+} */
 
 @font-face {
     font-family: 'Amar';
@@ -14,6 +14,13 @@ body
     font-family: 'Morn';
     src: url('../../../public/Fonts/Morn.ttf');
 }
+.BookingOneContainer
+{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
 .MMYY
 {
     text-align: center;
@@ -22,7 +29,7 @@ body
     font-size: 3rem;
     font-style: normal;
     font-weight: 400;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 .FDates
 {
@@ -35,7 +42,8 @@ body
 .DatesS
 {
     display: flex;
-    width: 70rem;
+    width: 80rem;
+    margin-top: 1rem;
     padding-left: 5.25rem;
     padding-right: 5.25rem;
     height: 6.5rem;
@@ -49,7 +57,7 @@ body
     text-align: center;
     display: inline-block;
     width: 12rem;
-    height: 6.5rem;
+    height: 6.2rem;
     margin-top: 0rem;
     margin-left: 10px;
     position: relative;
@@ -60,7 +68,7 @@ body
 .DayDate .Day
 {
     position: absolute; 
-    top: 10%; 
+    top: 30%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     font-family: 'Morn';
@@ -72,7 +80,7 @@ body
 .DayDate .Date
 {
     position: absolute; 
-    top: 50%; 
+    top: 70%; 
     left: 50%; 
     transform: translate(-50%, -50%);
     color: #F5BC25;
@@ -101,7 +109,7 @@ body
     display: inline-block;
     background-color: #F5BC25;
     width: 12rem;
-    height: 6.5rem;
+    height: 6.2rem;
     margin-top: 0rem;
     margin-left: 10px;
     position: relative;
@@ -109,7 +117,7 @@ body
 .SDayDate .Day
 {
     position: absolute; 
-    top: 10%; 
+    top: 30%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     font-family: 'Morn';
@@ -121,7 +129,7 @@ body
 .SDayDate .Date
 {
     position: absolute; 
-    top: 50%; 
+    top: 70%; 
     left: 50%; 
     transform: translate(-50%, -50%);
     color: black;
@@ -132,7 +140,7 @@ body
 }
 .Header {
     position: absolute; 
-    top: 61%; 
+    top: 57%; 
     left: 50%; 
     transform: translate(-50%, -50%);
   }
@@ -153,7 +161,7 @@ body
   .DispTimeSlots
   {
     position: absolute; 
-    top: 65%; 
+    top: 62%; 
     left: 50%; 
     transform: translate(-50%, -50%);
     margin-top: 5rem;

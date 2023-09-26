@@ -15,6 +15,10 @@ import Media from './Components/Pages/Media'
 import MediaTest from './Components/Pages/MediaTest';
 import DashboardMenu from './Components/Mini/DashboardMenu';
 import Analytics from './Components/Pages/Analytics';
+<<<<<<< HEAD
+=======
+// import DashboardMenu from './Components/Mini/DashboardMenu';
+>>>>>>> dcd6d8420608bf4edbce6843be370d903bb30281
 import Home from "./Components/Pages/Home";
 import Navbar from './Components/Pages/Navbar';
 import Pagetwo from './Components/Pages/Pagetwo';
@@ -23,6 +27,10 @@ import Pagefive from './Components/Pages/Pagefive';
 import Pagesix from './Components/Pages/Pagesix';
 import Gallery from './Components/Pages/Gallery';
 import PageReview from './Components/Pages/PageReview';
+<<<<<<< HEAD
+=======
+// import BookingDet from './Components/Pages/BookingDet';
+>>>>>>> dcd6d8420608bf4edbce6843be370d903bb30281
 import Contact from './Components/Pages/Contact';
 
 
@@ -37,10 +45,25 @@ function App() {
   };
   return (
     <>
-    {/* <DashboardMenu/> */}
-      <Router>
+    <div className='App'>
         <Routes>
-          <Route path="/Booking" element={<BookingSel/>} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar/>
+              <Home />
+              <Pagetwo />
+              <PageFour />
+              <Pagefive />
+              <Pagesix />
+              <BookingSel />
+              <Gallery />
+              <PageReview />
+              <Contact />
+              </>
+          }
+        />
           <Route path="/BookingTimeSlots" element={<BookingOne setHasCompletedTimeSlots={setHasCompletedTimeSlots}/>} />
           <Route
           path="/BookingDetails"
@@ -86,7 +109,9 @@ function App() {
           <Route path="/Dashboard/Mediatest" element={<MediaTest/>} />
           <Route path="/Dashboard/AddUser" element={<AddUser/>} />
           <Route path="/Dashboard/Pricing" element={<Pricing/>} />
+          <Route path="/Booking" element={<BookingSel/>} />
         </Routes>
+<<<<<<< HEAD
     </Router> 
 
     <div className='App'>
@@ -110,6 +135,9 @@ function App() {
   {/* <DashboardBooking/>
   <Media/> */}
   {/* <MediaTest/> */}
+=======
+        </div>
+>>>>>>> dcd6d8420608bf4edbce6843be370d903bb30281
     </>
   );
 }

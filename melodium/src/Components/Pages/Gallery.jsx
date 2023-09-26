@@ -44,6 +44,21 @@ function Gallery() {
     // Update the state with the new image order
     setImagesOrder(reorderedImages);
   };
+  const [videoUrl2, setVideoUrl2] = useState(null);
+
+  useEffect(() => {
+    // Make a GET request to your server to retrieve the YouTube video URL for video 2
+    fetch('http://localhost:3001/GetVideo/2')
+      .then(response => response.json())
+      .then(data => {
+        if (data.videoURL) {
+          setVideoUrl2(data.videoURL);
+        } else {
+          console.error('No video URL found for video 2.');
+        }
+      })
+      .catch(error => console.error('Error fetching video 2 URL:', error));
+  }, []);
 
   return (
     <>
@@ -69,7 +84,7 @@ function Gallery() {
             </defs>
           </svg>
         </div>
-        <YouTube className="melvideo" videoId={videoId} />
+        <YouTube className="melvideo" videoId={videoUrl2} />
         <div className="galleryherotext">
           <h1 className={`gallhero ${inView1 ? "animate" : ""}`}>
             <span>G</span>

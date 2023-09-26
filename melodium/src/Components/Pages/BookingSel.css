@@ -14,8 +14,16 @@
     font-family: 'LeagueGothic';
     src: url('../../../public/Fonts/LeagueGothic.ttf');
 }
+.BookingSelContainer
+{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
 .BookingImagesContainer {
     position: relative;
+    right: 60rem;
+    top: -5rem;
   }
   
   #BookingControlR {
@@ -63,19 +71,19 @@
     height: 300px;
     top: 24rem;
     object-fit: cover;
-    left: -47rem;
+    left: 1rem;
   }
   .StarContainer
   {
     position: relative;
+    top: -3rem;
+    left: 93rem;
   }
   #Star
   {
     position: absolute;
     width: 7rem;
     height: 7rem;
-    top: 2rem;
-    left: 39rem;
   }
   .BookingTextContainer
   {
@@ -183,12 +191,12 @@
   .LogoContainer
   {
     position: relative;
+    top: 38rem;
+    left: 94rem;
   }
   #StudioLogo
   {
     position: absolute;
-    top: 37.5rem;
-    left: 40rem;
     width: 5rem;
     height: 5rem;
   }
