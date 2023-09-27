@@ -168,7 +168,7 @@ function Pagetwo (){
 
         <div className="rectangle41"></div>
 
-        <h1 className="miketext">LEWITT <span>LCT 4.0 PURE</span></h1>
+        <h1 className="miketext">Neumann <span>LCT 4.0 PURE</span></h1>
         <div className="lewitt"></div>
          
         <h1 className="control">Control <span>Room </span></h1>

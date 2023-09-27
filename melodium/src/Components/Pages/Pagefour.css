@@ -49,6 +49,7 @@
     z-index:4;
     transform: translateX(-100%);
     transition: opacity 1s ease-in-out;
+    
 }
 .studiorow1.animate, 
 .studiorow2.animate,
@@ -82,6 +83,7 @@
     font-family: staat;
     transition: 0.3s all ease-in-out;
     letter-spacing: 0.2rem;
+    
 }
 .recordingstudio h1{
     position: relative;

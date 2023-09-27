@@ -55,12 +55,12 @@
 	overflow: hidden;
 }
 
-.scroll {
+/* .scroll {
 	height: 30rem;
 	overflow-y: hidden;
 	overflow-x: scroll;
 	animation: all .3s ease-in;
-}
+} */
 
 .inner-scroll {
   margin:1rem;
@@ -86,41 +86,41 @@
 }
 
 .block {
-  margin: 2rem;
+  margin: 1rem;
 	width: 18rem;
-	height: 25rem;
+	height: 27rem;
 	background-color: #ffffff;
-	margin: 0 2rem 0 0;
+	margin: 0 1rem 0 0;
 	border-radius: 1.2rem;
 	/* box-shadow: 0 0 8px 0 rgba(0,0,0,.1) */
 }
 
 .reviewrectangle1{
   width:18rem;
-  height:7rem;
+  height:6.5rem;
   background-color:darkgrey;
   object-fit: cover;
   border-radius: 1.2rem;
 }
 .review1{
-  font-size:1.2rem;
-  line-height:1.5rem;
-  margin:1rem;
+  font-size:1.05rem;
+  line-height:1.3rem;
+  margin:0.5rem;
   font-family: morn;
-  text-align: justify;
+  text-align: center;
   
 }
 .namereview{
-  font-size:2rem;
+  font-size:1.6rem;
   line-height:1.5rem;
   text-align: end;
-  padding-top:2rem;
-  margin-right: 3rem;
+  padding-top:1.3rem;
+  margin-right: 2rem;
   font-family:ava ;
 }
 .ratereview{
   text-align: end;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-top: 0.8rem;
   margin-right: 2.5rem;
   font-family:ava ;

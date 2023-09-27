@@ -15,7 +15,10 @@ import Media from './Components/Pages/Media'
 import MediaTest from './Components/Pages/MediaTest';
 import DashboardMenu from './Components/Mini/DashboardMenu';
 import Analytics from './Components/Pages/Analytics';
+<<<<<<< HEAD
+=======
 // import DashboardMenu from './Components/Mini/DashboardMenu';
+>>>>>>> dcd6d8420608bf4edbce6843be370d903bb30281
 import Home from "./Components/Pages/Home";
 import Navbar from './Components/Pages/Navbar';
 import Pagetwo from './Components/Pages/Pagetwo';
@@ -24,7 +27,10 @@ import Pagefive from './Components/Pages/Pagefive';
 import Pagesix from './Components/Pages/Pagesix';
 import Gallery from './Components/Pages/Gallery';
 import PageReview from './Components/Pages/PageReview';
+<<<<<<< HEAD
+=======
 // import BookingDet from './Components/Pages/BookingDet';
+>>>>>>> dcd6d8420608bf4edbce6843be370d903bb30281
 import Contact from './Components/Pages/Contact';
 
 
@@ -105,7 +111,33 @@ function App() {
           <Route path="/Dashboard/Pricing" element={<Pricing/>} />
           <Route path="/Booking" element={<BookingSel/>} />
         </Routes>
+<<<<<<< HEAD
+    </Router> 
+
+    <div className='App'>
+          {/* <Navbar /> */}
+          {/* <Home /> */}
+           <Pagetwo />
+         {/* <PageFour />
+          <Pagefive />
+          <Pagesix />
+          <Gallery /> 
+          <PageReview />
+          <Contact /> */}
         </div>
+
+
+   {/* <Login/> 
+    <AddUser/>
+  <Reviews/> 
+  <Pricing/>
+  <BookingConfirmed/> */}
+  {/* <DashboardBooking/>
+  <Media/> */}
+  {/* <MediaTest/> */}
+=======
+        </div>
+>>>>>>> dcd6d8420608bf4edbce6843be370d903bb30281
     </>
   );
 }

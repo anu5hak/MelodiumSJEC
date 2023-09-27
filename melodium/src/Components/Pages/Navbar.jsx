@@ -1,5 +1,8 @@
 import React,{useEffect,useState} from "react";
+<<<<<<< HEAD
+=======
 // import { PiSlidersBold } from "react-icons/pi";
+>>>>>>> dcd6d8420608bf4edbce6843be370d903bb30281
 import "./Navbar.css"
 import logo from '../Pages/Images/logo.png';
 

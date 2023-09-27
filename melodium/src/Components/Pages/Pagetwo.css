@@ -207,13 +207,15 @@
     position: relative;
     width: 30rem;
     height: 30rem;
-    top: -54rem;
+    top: -58rem;
     left: 79rem;
+    margin: 0;
 }
 .mike2 {
     position: relative;
-    width: 30rem;
-    height: 30rem;
+    margin: 0;
+    width: 39rem;
+    height: 37rem;
 }
 .mike2:hover{
     transform: scale(1.1);
@@ -446,118 +448,140 @@
         height: 210vh;
     } */
     .rectangle3 {
-        width: 11rem;
-        height: 4rem;
-        top:0rem;
+        width: 10rem;
+        height: 3rem;
+        top:2.5rem;
     }
-    /* .circle2 {
-        color: rgb(0, 0, 0);
+     .circle2 {
+        display: none;
+        /* color: rgb(0, 0, 0);
         top: -24rem;
         left:31rem;
         width:12.5rem;
         border-radius: 6.2rem;
         background-color: aqua;
-    } */
+    }  */
+}
      .herotext2{
-        width:30rem;
+        position: absolute;
+        width:20rem;
         height:fit-content;
-        font-size: 3rem;
-        top:4rem;
+        font-size: 2.5rem;
+        top:10rem;
         left: 6rem;
-        line-height: 70px; 
+        line-height: 55px; 
         letter-spacing: -2.6px;
     }
     .subtext2 {
-        font-size: 22px;
-        width: 26rem;
+        position: absolute;
+        font-size: 18px;
+        width: 23rem;
         height: fit-content;
-        top: 10rem;
+        top: 28rem;
         left: 6rem;
     }
     .pagetwoimagecontainer{
-        width:26rem;
-        height:23rem;
-        top: -29rem;
-        left: 42.5rem;
+        position: absolute;
+        width:24rem;
+        height:20rem;
+        top: 11rem;
+        left: 38rem;
+        border-radius: 1.9rem;
     }
     
      .pagetwoimg{
-        top:-1.3rem;
-        width:26rem;
-        height:23rem;
-        left:0rem;
-        margin-left: 0;
+        width:24rem;
+        height:20rem;
+        margin: 0;
+        top:0rem;
     }
     .rectangle32 {
+        position: absolute;
         width: 0.2rem;
         height:7rem;
-        top: -32rem;
+        top: 31.5rem;
         left: 3.2rem;
     }
     
     .rectangle33 {
+        position: absolute;
         width: 7rem;
         height: 0.2rem;
-        top: -33rem;
+        top: 40.5rem;
         left: 5.4rem;
     }
     .circle23{
-        top: -31.5rem;
+        position: absolute;
+        top: 39rem;
         left: 2.6rem;
     }
     .record1 {
-        top:-37.8rem;
-        left: 40.6rem;
+        position: absolute;
+        height:0.2rem;
+        width :7rem;
+        top:32rem;
+        left: 36.5rem;
     }
     .record2 {
-        top:-48.8rem;
-        left: 40.6rem;
+        position: absolute;
+        height:7rem;
+        width :0.2rem;
+        top:25rem;
+        left: 36.5rem;
     }
 
  
     .mikeimagecontainer{
-        width: 21rem;
-        height: 23rem;
-        top: -52rem;
-        left: 52rem;
+        position: absolute;
+        margin: 0;
+        width: 16rem;
+        height: 22rem;
+        top: 30rem;
+        left: 47rem;
     }
     .mike2 {
-        width: 22rem;
-        height: 20rem;
+        width: 24rem;
+        height: 24rem;
     } 
      .rect4 {
-        left: 60rem;
-        width: 12rem;
-        height: 4rem;
+        position: absolute;
+        top: 49rem;
+        left: 54rem;
+        width: 10rem;
+        height: 3.3rem;
     }
     
     
-    /*.circlethree { 
-        width: 12.5rem;
+    .circlethree { 
+        display: none;
+        /* width: 12.5rem;
         top: -69rem;
         left: 4rem;
         fill: rgba(245, 188, 37, 0.50);
         backdrop-filter: blur(5px);
-        z-index:2;
-    }*/
+        z-index:2; */
+    }
 
     
-    .pagetwo2imagecontainer{
-        background-color: #F5BC25;
+     .pagetwo2imagecontainer{
+        display: none;
+        /* background-color: #F5BC25;
         width:26rem;
         height:23rem;
         left: 10rem;
-        border-radius: 1.9rem;
+        border-radius: 1.9rem; */
     }
     .pagethreeimg{
-        width:26rem;
+        display: none;
+        /* width:26rem;
         height:23rem;
         top:0rem;
-        margin: 0;
+        margin: 0; */
        
-    }
-    /* .herotext3{
-        position: relative;
+    } 
+    .herotext3{
+        display: none;
+        /* position: relative;
         width:35rem;
         height:fit-content;
         color: #F8F8F8;
@@ -569,30 +593,12 @@
         left: 52rem;
         font-weight: 400;
         line-height: 80px; 
-        letter-spacing: -2.6px;
-        opacity: 0;
-        transform: scale(0.5) translateY(100%);
-        animation: fadeInAndScale 1s ease-in-out forwards, slideInFromBottom 1s ease-in-out 1s forwards;
-     }
-       
-       @keyframes fadeInAndScale {
-           to {
-               opacity: 1;
-               transform: scale(1);
-           }
+        letter-spacing: -2.6px; */
        }
-       
-       @keyframes slideInFromBottom {
-           to {
-               transform: translateY(0);
-           }
-       }
-    .herotext3 span{
-        color: #F5BC25;
-    }
     
     .subtext3 {
-        color: #FFF;
+        display: none;
+        /* color: #FFF;
         font-family: maven;
         font-size: 22px;
         font-style: normal;
@@ -603,36 +609,40 @@
         text-align: left;
         top:-90rem;
         left: 58.5rem;
-        position: relative;
+        position: relative; */
     }
     
     .rectangle42 {
-        position: relative;
+        display: none;
+        /* position: relative;
         width: 8rem;
         height: 0.2rem;
         top: -86rem;
         background-color: #ffffff;
-        left: 92rem;
+        left: 92rem; */
     }
     .circle33{
-        fill: #F5BC25;
+        display: none;
+        /* fill: #F5BC25;
         backdrop-filter: blur(5px);
         position: relative;
         top: -88rem;
-        left: 100.8rem;
+        left: 100.8rem; */
     }
     
     .rectangle41 {
-        position: relative;
+        display: none;
+        /* position: relative;
         width: 0.2rem;
         height:7rem;
         top: -98.5rem;
         background-color: #ffffff;
-        left: 102rem;
+        left: 102rem; */
     }
     
     .miketext {
-        color: #FFF;
+        display: none;
+        /* color: #FFF;
         font-family: Moulpali;
         font-size: 25px;
         font-style: normal;
@@ -644,24 +654,21 @@
         text-align: left;
         top: -138.5rem;
         left: 74rem;
-        position: relative;
+        position: relative; */
     }
-    
-    .miketext span{
-        color: #F5BC25;
-    }
-    
     .lewitt{
-        position: relative;
+        /* position: relative;
         width: 4rem;
         height: 0.2rem;
         top:-141rem;
         background-color:#F5BC25;
-        left:86rem;
+        left:86rem; */
+        display: none;
     }
     
     .control {
-        color: #FFF;
+        display: none;
+        /* color: #FFF;
         font-family: Moulpali;
         font-size: 25px;
         font-style: normal;
@@ -673,48 +680,35 @@
         text-align: left;
         top: -107.7rem;
         left: 31.3rem;
-        position: relative;
-    }
-    .control span{
-        color: #F5BC25;
+        position: relative; */
     }
     .control1 {
-        position: relative;
+        /* position: relative;
         width: 4rem;
         height: 0.2rem;
         top:-110.2rem;
         background-color:#F5BC25;
-        left:40rem;
+        left:40rem; */
+        display: none;
     } 
     .melodiumcontainer{
-        position:relative ;
+        display: none;
+        /* position:relative ;
         top:-108rem;
         left:2rem;
         width:9rem;
-        height : 1.5rem;
+        height : 1.5rem; */
     }
     .melodium{
-        text-align: center;
+        display: none;
+        /* text-align: center;
         font-weight: 700;
         line-height: normal;
         color: #D9D9D9;
         font-family: mont;
         font-size: 18px;
         font-style: normal;
-        font-weight: 700;
-        letter-spacing: 3.6px;
-        transform: translateX(-100%);
-        animation: slideInLeft 1s forwards;
-      }
-      @keyframes slideInLeft {
-        to {
-            transform: translateX(0);
-        }
+        font-weight: 700; */
+
     }
-    .melodium span{
-        color: #F5BC25;
-    }
-    
-}
-  */
 }

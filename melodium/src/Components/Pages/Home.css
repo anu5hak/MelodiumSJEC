@@ -336,7 +336,8 @@
     left:33vw;
   }
   button {
-    padding: 3px 20px;
+    padding: 3px 15px;
     font-size: 1.3rem;
+    letter-spacing: 0.1rem;
   }
 }

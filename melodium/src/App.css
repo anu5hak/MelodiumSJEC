@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> dcd6d8420608bf4edbce6843be370d903bb30281
 body{
     overflow-x:hidden ;
     scrollbar-width: none;
@@ -10,3 +14,11 @@ body{
     width:100vw;
     position: relative;
 }
+<<<<<<< HEAD
+body
+{
+  background-color: #21201E;
+  overflow: scroll;
+}
+=======
+>>>>>>> dcd6d8420608bf4edbce6843be370d903bb30281
