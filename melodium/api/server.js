@@ -269,6 +269,34 @@ app.post('/ReviewAdded', async (req, res) => {
   }
 });
 
+app.get('/getReviews',async(req,res) => 
+{
+  const rev = await ReviewSchema.find();
+  res.json(rev)
+})
+
+app.get('/updateReviews',async(req,res) => 
+{
+  const rev = await ReviewSchema.find();
+  res.json(rev)
+})
+
+app.delete('/DeleteReviews', async (req, res) => {
+  try {
+    // Use the deleteMany() method to delete all documents in the ReviewSchema collection
+    const result = await ReviewSchema.deleteMany({});
+    
+    // Check if any documents were deleted
+    if (result.deletedCount > 0) {
+      res.status(200).json({ message: 'All reviews deleted successfully.' });
+    } else {
+      res.status(404).json({ message: 'No reviews found to delete.' });
+    }
+  } catch (error) {
+    res.status(500).json({ message: 'Internal server error', error: error.message });
+  }
+});
+
 
 
 app.delete('/DeleteBooking/:bookingID', async (req, res) => {
