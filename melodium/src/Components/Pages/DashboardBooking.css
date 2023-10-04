@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-/* body
-=======
 .dbookingcont
->>>>>>> dcd6d8420608bf4edbce6843be370d903bb30281
 {
   width: 100vw;
   height: 100vh;
     overflow: hidden;
-} */
+} 
 
 @font-face {
     font-family: 'Morn';
@@ -19,6 +15,8 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    height: 100vh;
+    width: 100vw;
 }
 .table-scroll
 {
@@ -377,4 +375,197 @@ tbody tr {
     left: 1rem;
     cursor: pointer;
     border-radius: 1rem;
+  }
+  @media screen and (min-width: 5120px) 
+  {
+    .UtilityBar
+    {
+        left: 20vw;
+        top:5rem;
+        width: 76%;
+        height: 7%;
+        border-radius: 5rem;
+        /* background-color: aqua; */
+    }
+    #search-bar
+    {
+        width: 25%;
+        height: 7.5rem;
+        font-size: 4.5rem;
+        border-radius: 2rem;
+        padding: 3rem 1.5rem;
+        margin-top: 2.2rem;
+        margin-left: 2rem;
+    }
+    #search-button
+    {
+        width: 8%;
+        height: 7.5rem;
+        font-size: 4rem;
+        border-radius: 1rem;
+        margin-top: 0.8rem;
+        margin-left: 1rem;
+    }
+    .sorting-booking-buttons
+    {
+        top: 2rem;
+        margin-left: 27vw;
+        border-radius: 3rem;
+        width: 35%;
+        height: 8rem;
+    }
+    .sorting-booking-buttons > *
+    {
+        margin-left: 3rem;
+    }
+    #today-booking-button
+    {
+        padding: 1rem 3rem;
+        border-radius: 3rem;
+        margin-top: 0.3rem;
+        margin-left: 0rem;
+        height: 7rem;
+        font-size: 2.5rem;
+    }
+    #reset-button
+    {
+        padding: 1rem 3rem;
+        border-radius: 3rem;
+        margin-top: 0.3rem;
+        height: 7rem;
+        font-size: 2.5rem;
+    }
+    #BookingDateSelect
+    {
+        padding: 1rem 3rem;
+        border-radius: 3rem;
+        margin-top: 0.3rem;
+        height: 7rem;
+        font-size: 2.5rem;
+    }
+    .StudioButtonD
+      {
+        width: 20rem;
+        height: 7rem;
+        font-size: 3.5rem;
+        border-radius: 2rem;
+        top: 2.3rem;
+        margin-left: 54.5vw;
+        letter-spacing: 0.2rem;
+      }
+      .JamRoomButtonD
+      {
+        width: 27rem;
+        height: 7rem;
+        font-size: 3.5rem;
+        border-radius: 2rem;
+        top: 2.3rem;
+        margin-left: 61vw;
+        letter-spacing: 0.2rem;
+      }
+      .BlockButton
+      {
+        width: 15rem;
+        height: 7rem;
+        font-size: 3.5rem;
+        border-radius: 2rem;
+        top: 2.3rem;
+        margin-left: 70vw;
+        letter-spacing: 0.2rem;
+      }
+      .table-scroll
+      {
+        margin-left: 20%;
+        width: 76%;
+        height: 88%;
+        left: 0vw;
+        top: 6rem;
+      }
+      table {
+        width: 100%;
+        height: 99%;
+        border-radius: 3rem;
+        padding: 2rem;
+    }
+        tbody td {
+          min-width: 8.32vw;
+          /* width: xxrem; */ /* Optionally set width if needed */
+      }
+        td {
+          border: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+          padding: 7px; /* Adjust padding for consistent spacing */
+          font-size: 4rem;
+          max-width: 8.32vw;
+          /* width: xxrem; */ /* Optionally set width if needed */
+      }
+      tbody {
+          height: 92%;
+      }
+      tbody tr {
+          margin-top: 10px; 
+          /* padding-top: 0.5rem; */
+      } 
+      .HeaderTitles th {
+          font-size: 5rem;
+          margin-bottom: 1rem;
+          margin-top: 15px;
+          padding: 8px 0rem; /* Add padding to match regular cells */
+      }
+      .HeaderTitles th:first-child{
+          border-radius: 30px 0 0 30px;
+      }
+      .HeaderTitles th:last-child{
+          border-radius: 0px 30px 30px 0px;
+      }
+      #edit-button
+    {
+      border: 3px;
+      font-size: 3rem;
+      padding: 0.6rem 0.5rem;
+    }
+    #delete-button
+    {
+      font-size: 3rem;
+      padding: 0.6rem 0.5rem;
+    }
+    .edit-div {
+      height: 22%;
+      width: 37.5%;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }    
+    #EditSelectDate
+    {
+      width: 25vw;
+      height: 40%;
+      font-size: 5rem;
+      padding: 0.2rem 1rem;
+      border-radius: 0.7rem;
+      margin-top: 7rem;
+    }
+    .DashTimeSlots
+    {
+      top: 80%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);
+      margin-top: 5rem;
+      width:  50vw;
+      font-size: 3rem;
+      display: flex;
+    flex-wrap: wrap;
+    }
+
+    .DashTimeSlots > * {
+      margin: 1rem 1rem; 
+    }
+    #save-button
+    {
+      font-size: 4rem;
+      height: 30%;
+      padding: 0.5rem 1rem;
+      left: 1rem;
+      border-radius: 1rem;
+    }
   }

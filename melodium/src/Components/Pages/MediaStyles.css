@@ -297,4 +297,81 @@
   top: 1139px;
   width: 55px;
 }
-
+@media screen and (min-width:5120px) 
+{
+  .audio .text-wrapper {
+    font-size: 17rem;   
+    top: 3vh;
+    left: 24%;
+  }
+  .media-line
+  {
+      left: 24%;
+      top: 28rem;
+      height: 1rem;
+      width: 70vw;
+  }
+  .audio .text-wrapper-1 {
+    font-size: 13rem;   
+    top: 32rem;
+    left: 24%;
+  }
+  .audio .text-wrapper-10 {
+    font-size: 10rem;
+    font-weight: 400;
+    left: 24%;
+    padding: 0.5rem 2rem;
+    top: 52rem;
+    width: 40vw;
+  }
+  .confirm-video-1
+  {
+    width: 10%;
+    height: 13rem;
+    font-size: 6rem;
+    top: 52rem;
+    left: 66%;
+  }
+  .audio .text-wrapper-11 {
+    font-size: 10rem;
+    left: 24%;
+    padding: 0.5rem 2rem;
+    top: 73rem;
+    width: 40vw;
+  }
+  .confirm-video-2
+  {
+    width: 10%;
+    height: 13rem;
+    font-size: 6rem;
+    top: 73rem;
+    left: 66%;
+  }
+  .audio .text-wrapper-2 {
+    font-size: 13rem;   
+    top: 93rem;
+    left: 24%;
+  }
+  .audio .text-wrapper-12 {
+    font-size: 9rem;
+    left: 24%;
+    padding: 0.5rem 2rem;
+    top: 112rem;
+    width: 30%;
+  }
+  .audio .text-wrapper-13 {
+    font-size: 9rem;
+    left: 55%;
+    padding: 0.5rem 1rem;
+    top: 112rem;
+    width: 25%;
+  }
+  .confirm-video-3
+  {
+    width: 10%;
+    height: 13rem;
+    font-size: 6rem;
+    top: 112rem;
+    left: 83%;
+  }
+}

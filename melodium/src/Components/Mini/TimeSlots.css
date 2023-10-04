@@ -34,3 +34,12 @@
         height: 2.2rem;
     }
 }
+@media screen and (min-width: 5120px)
+{
+    .Slot
+    {
+        width: 45rem;
+        font-size: 4rem;
+        height: 8rem;
+    }
+}

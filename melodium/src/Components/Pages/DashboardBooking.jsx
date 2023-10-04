@@ -49,25 +49,26 @@ function DashboardBooking() {
             console.log("select")
             const dateArray = selectedDate.split('-');
             const reversedDateArray = dateArray.reverse();
-            reversedDateArray[1] = reversedDateArray[1].replace(0,'')
+            console.log("blo:"+reversedDateArray)
+            reversedDateArray[1] = reversedDateArray[1].replace(/^0/, '');
             var finalDate = reversedDateArray.join('-');
-            if(finalDate[0][0]=='0')
-            {
-                finalDate =  finalDate.substring(1)
+            if (finalDate[0][0] == '0') {
+              finalDate = finalDate.substring(1);
+              
             }
             getUpcomingBookings(finalDate,'All')
-            setSelectedDate('');
         }
         else
         if(DashDate)
         {
             const dateArray = DashDate.split('-');
             const reversedDateArray = dateArray.reverse();
-            reversedDateArray[1] = reversedDateArray[1].replace(0,'')
+            console.log("blo:"+reversedDateArray)
+            reversedDateArray[1] = reversedDateArray[1].replace(/^0/, '');
             var finalDate = reversedDateArray.join('-');
-            if(finalDate[0][0]=='0')
-            {
-                finalDate =  finalDate.substring(1)
+            if (finalDate[0][0] == '0') {
+              finalDate = finalDate.substring(1);
+              
             }
             const availableTimes = async () => {
                 try {
@@ -92,11 +93,12 @@ function DashboardBooking() {
         {
             const dateArray = BlockDate.split('-');
             const reversedDateArray = dateArray.reverse();
-            reversedDateArray[1] = reversedDateArray[1].replace(0,'')
+            console.log("blo:"+reversedDateArray)
+            reversedDateArray[1] = reversedDateArray[1].replace(/^0/, '');
             var finalDate = reversedDateArray.join('-');
-            if(finalDate[0][0]=='0')
-            {
-                finalDate =  finalDate.substring(1)
+            if (finalDate[0][0] == '0') {
+              finalDate = finalDate.substring(1);
+              
             }
             console.log("BlockDate:"+finalDate)
             const availableTimes = async () => {
@@ -155,6 +157,7 @@ function DashboardBooking() {
   }
 
     const GetBookings = () => {
+      setBlockDate('')
       setShowTable(true)
       setEditMode(false)
       setDeleteMode(false)
@@ -235,6 +238,7 @@ function DashboardBooking() {
           console.error('An error occurred:', error);
           // Handle the error case if an exception occurred during the request
         }
+        GetBookings();
       };
       const getAvailableTimeSlots = (date) => {
         let apiEndpoint = API_BASE + '/BookingTimeSlots/' + date +'/1/studio';
@@ -333,9 +337,10 @@ function DashboardBooking() {
           console.error('Failed to update booking:', error);
           // Handle the error case if the update was not successful
         });
-        setEditMode(false)
+        setEditMode(false);
         GetBookings();
-        window.location.reload();
+        GetBookings();
+        // window.location.reload();
     };
     
     const updateBooking = async (data) => {
@@ -364,12 +369,16 @@ function DashboardBooking() {
 
   const handleBlockSave = async () => {
     const dateArray = BlockDate.split('-');
+    
     const reversedDateArray = dateArray.reverse();
-    reversedDateArray[1] = reversedDateArray[1].replace(0, '');
+    console.log("blo:"+reversedDateArray)
+    reversedDateArray[1] = reversedDateArray[1].replace(/^0/, '');
     var finalDate = reversedDateArray.join('-');
     if (finalDate[0][0] == '0') {
       finalDate = finalDate.substring(1);
+      
     }
+
   
     const updatedBookingData = {
       BookingID: generateRandomBookingNumber(5),
@@ -387,11 +396,16 @@ function DashboardBooking() {
     } catch (error) {
       console.error('Failed to save booking:', error);
     }
+    setEditMode(false);
+        GetBookings();
+        GetBookings();
+
   };
   
     
   const blockBookings = () =>
   {
+    setEditMode(false)
     setDeleteMode(true)
     setShowTable(false)
   }
@@ -436,7 +450,7 @@ function DashboardBooking() {
                                 onChange={e => setSelectedDate(e.target.value)}
                             />
                         </div>
-                    </div>
+                  </div>
                     <div className="table-scroll">
           {BookingDetails.length === 0 ? (
             <h1>No available record</h1>
@@ -533,7 +547,7 @@ function DashboardBooking() {
                       <p>No available time slots.</p>
                     )}
                   </div>
-                  <button onClick={handleBlockSave}>Save</button>
+                  <button id='save-button' onClick={handleBlockSave}>Save</button>
                 </div>
               )}
             </div>

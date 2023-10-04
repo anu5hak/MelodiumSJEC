@@ -130,3 +130,87 @@
     background-color: #F5BC25;
     color: black;
 }
+@media screen and (min-width:5120px) 
+{
+    .review-title
+    {
+        font-size: 17rem;   
+        top: 3vh;
+        left: 24%;
+    }
+    .review-line
+    {
+        left: 24%;
+        top: 28rem;
+        height: 1rem;
+        width: 70vw
+    }
+    .review-input-fields
+    {
+        /* background-color: #F5BC25; */
+        left: 24%;
+        top: 32rem;
+        height: 70%;
+        width: 70vw;
+    }
+    #review-id-input-label
+    {
+        font-size: 10rem;
+        margin-top: 0rem;
+    }
+    #review-id-input
+    {
+        padding: 0.3rem 0.3rem;
+        font-size: 6rem;
+        width: 25vw;
+        top: 15rem;
+    } 
+    #review-name-input-label
+    {
+        font-size: 10rem;
+        margin-top: 0rem;
+        top: 0rem;
+        left: 45%;
+    }
+    #review-name-input
+    {
+        padding: 0.3rem 1rem;
+        font-size: 6rem;
+        width: 13vw;
+        top: 15rem;
+        left: 45%;
+    } 
+    #review-rating-input-label
+    {
+        font-size: 10rem;
+        top: 30rem;
+        left: 0;
+    }
+    #review-rating-input
+    {
+        padding: 0.3rem 0.3rem;
+        font-size: 6rem;
+        width: 25vw;
+        top: 45rem;
+    } 
+    #review-input-label
+    {
+        top:57rem;
+        font-size: 10rem;
+    }
+    #review-input
+    {
+        top:72rem;
+        font-size: 6rem;
+        width: 80%;
+        height: 30%;
+    }
+    #review-submit-button {
+        width: 25rem;
+        height: 10rem;
+        font-size: 6rem;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }      
+}

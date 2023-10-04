@@ -7,7 +7,7 @@
     left: 5vh;
     position: fixed;
     top: 1.5rem;
-    width: 14rem;
+    width: 30vh;
     background-color: #000000;
     border-radius: 62px;
     display: flex;
@@ -152,4 +152,72 @@
   
   .menu-link:hover {
     color: #f5bc25; /* Change text color on hover */
+  }
+  @media screen and (min-width: 5120px) {
+    .dashboard-menu
+    {
+      border-radius: 200px;
+      top: 4rem;
+    }
+    .studio-image-text-cont
+    {
+      top: 7rem;
+      width: 90%;
+      height: 11%;
+      /* background-color: #F5BC25; */
+    }
+    .menu-logo
+    {
+      height: 15rem;
+      width: 15rem;
+    }
+    .spanMel {
+      font-size: 7rem;
+      letter-spacing: 0.32px;
+      left: 2rem;
+    }
+    .dash-menu-line1
+    {
+      top: 27rem;
+      height: 0.5rem;
+      width: 90%;
+    }
+    .dashboard-menu-container
+    {
+      width: 90%;
+      height: 60%;
+      top: 32rem;
+      font-size: 100rem;
+      left: 2.7rem;
+    }
+    .icon-text
+    {
+      font-size: 7rem;
+    }
+    .dashboard-menu-container li
+    {
+      margin-top: 10rem;
+      margin-left: 4rem;
+    }
+  .dashboard-menu-container li:first-child
+    {
+      margin-top: 0;
+      cursor: pointer;
+    }
+    .dash-menu-line2
+    {
+      top: 72%;
+      height: 0.5rem;
+      width: 90%;
+    }
+    .dashboard-menu-container2
+    {
+      width: 90%;
+      top: 76%;
+    }
+    .dashboard-menu-container2 li
+    {
+      margin-top: 8rem;
+      margin-left: 1rem;
+    }
   }

@@ -1,6 +1,5 @@
 import React from 'react'
 import './DashboardMenu.css'
-// import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import Logo from '../../Images/MelodiumLogo.png'
 import {Link, useNavigate} from 'react-router-dom';
@@ -9,7 +8,7 @@ function DashboardMenu() {
   const navigate = useNavigate();
   const handleLogout = () =>
   {
-    navigate("/Dashboard/Login")
+    window.location.reload();
   }
   return (
     <>
